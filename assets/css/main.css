@@ -1883,6 +1883,11 @@ a.tema {
       justify-content: center;
 }
 
+.c-language-buttons, .c-modes-buttons {
+  -ms-flex-pack: left;
+      justify-content: left;
+}
+
 @media (min-width: 760px) {
   .c-header__top,
   .c-header__brand {
@@ -1930,7 +1935,7 @@ a.tema {
     text-align: left;
     margin-bottom: 0;
   }
-  .c-header__social-buttons {
+  .c-header__social-buttons, c-modes-buttons, c-modes-buttons {
     position: absolute;
     bottom: 0;
     right: 0;
@@ -2307,8 +2312,12 @@ a.tema {
 }
 
 @media (max-width: 1023px) {
-  .u-show-md {
+  .u-show-md, .label, .c-social-buttons, br {
     display: none !important;
+  }
+  .c-language-buttons, .c-modes-buttons {
+    -ms-flex-pack: center;
+        justify-content: center;
   }
 }
 
