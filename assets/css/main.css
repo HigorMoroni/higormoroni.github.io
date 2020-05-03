@@ -2006,6 +2006,7 @@ a.tema {
 .c-brand__first-word,
 .c-brand__second-word {
   display: block;
+  padding: 1%
 }
 
 .c-brand__sub-title {
