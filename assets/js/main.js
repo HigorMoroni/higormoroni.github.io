@@ -19,7 +19,6 @@ $(document).ready(function() {
 
 });
 
-
 function modoNoturno() {
     const conjunto = document.querySelector('ul.tema')
     const linkTema = document.querySelector('link#tema')

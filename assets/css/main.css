@@ -578,6 +578,12 @@ a.tema {
   cursor: pointer;
 }
 
+.imgCursos {
+  float: left;
+  margin-right: 0.5em;
+  height: 6em;
+}
+
 .o-list-bare,
 .c-social-buttons,
 .c-language-buttons,
