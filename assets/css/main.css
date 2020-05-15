@@ -2185,6 +2185,8 @@ a.tema {
 .c-image-overlay img {
   width: 100%;
   transition: ease .6s;
+  -webkit-filter: grayscale(100%);
+	filter: grayscale(100%);
 }
 
 .c-image-overlay .c-image-overlay__deco-line {
