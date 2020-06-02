@@ -4,4 +4,4 @@
 
 Este projeto encontra-se em desenvolvimento
 
-### Para acessa-lo pode [Clicar Aqui](https://www.higor.tech/)
+### Para acessa-lo pode [Clicar Aqui](higor.tech)
