@@ -1,0 +1,7 @@
+strong {
+  @apply font-bold text-secondary-text;
+}
+
+a {
+  @apply hover:text-highlight-text cursor-pointer; 
+}

@@ -1,0 +1,10 @@
+@theme {
+  --color-primary-text: #939393;
+  --color-secondary-text: #727272;
+  --color-highlight-text: #F8BB10;
+  --color-primary-page-background: #FFFFFF;
+  --color-secondary-page-background: #FCFCFC;
+  --color-primary-title-background: #FBFBFB;
+  --color-secondary-title-background: #F8F8F8;
+  --color-line: #ECECEC;
+}
