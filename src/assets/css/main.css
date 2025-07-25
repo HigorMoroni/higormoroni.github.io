@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@import "./configs";
+@import "./utils";
+
+body {
+  font-family: 'Lato', sans-serif;
+  @apply text-sm;
+}
