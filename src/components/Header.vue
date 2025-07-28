@@ -38,7 +38,7 @@ import avatar from '../assets/avatar.webp';
                 </a>
               </li>
             </ul>
-            <div class="w-full flex justify-between items-center">
+            <div class="w-full flex justify-center lg:justify-between items-center">
               <ul class="flex gap-2">
                 <li>
                   <a>
@@ -51,7 +51,7 @@ import avatar from '../assets/avatar.webp';
                   </a>
                 </li>
               </ul>
-              <ul class="flex gap-2">
+              <ul class="hidden gap-2 lg:flex">
                 <li>
                   <a href="https://github.com/HigorMoroni" target="_blank">
                     <ion-icon name="logo-github" />
