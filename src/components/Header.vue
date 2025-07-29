@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import avatar from '../assets/avatar.webp';
+import avatar from '@/assets/avatar.webp';
 </script>
 
 <template>
