@@ -3,7 +3,7 @@ import avatar from '@/assets/avatar.webp';
 </script>
 
 <template>
-  <header class="h-screen max-w-[1920px] mx-auto min-h-200 sm:min-h-160 md:min-h-152 lg:min-h-0 flex flex-col justify-center items-center bg-primary-background text-primary-text">
+  <header class="h-screen max-w-[1920px] mx-auto min-h-200 sm:min-h-160 md:min-h-152 lg:min-h-0 flex flex-col justify-center items-center bg-primary-background">
     <section class="w-full p-6 flex flex-col justify-center items-center gap-5 lg:flex-row lg:p-0 lg:gap-0 lg:h-full">
       <div class="w-full flex justify-center items-center lg:bg-primary-title-background lg:h-full lg:w-3/10">
         <figure>
