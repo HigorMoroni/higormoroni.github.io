@@ -12,7 +12,7 @@ import avatar from '../assets/avatar.webp';
       </section>
 
       <section class="w-full flex flex-col lg:h-full lg:w-7/10 lg:p-12">
-        <div class="w-full flex flex-col gap-5 items-center lg:h-full lg:justify-center lg:items-start lg:gap-10 xl:gap-6">
+        <div class="w-full flex flex-col gap-5 items-center py-5 lg:h-full lg:justify-center lg:items-start lg:gap-10 xl:gap-6">
           <h1 class="flex flex-col items-center text-5xl/14 lg:items-start xl:text-7xl/20">
             <span class="font-light">Higor</span>
             <span class="text-highlight-text uppercase font-bold">Moroni</span>
@@ -20,7 +20,7 @@ import avatar from '../assets/avatar.webp';
   
           <h2 class="font-light xl:text-2xl">Desenvolvedor Front-end III</h2>
   
-          <div class="w-full flex flex-col gap-1 items-center text-2xl lg:items-start">
+          <div class="w-full flex flex-col gap-2 items-center text-2xl lg:items-start">
             <ul class="flex gap-2">
               <li>
                 <a href="#">
