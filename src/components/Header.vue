@@ -4,21 +4,21 @@ import avatar from '@/assets/avatar.webp';
 
 <template>
   <header class="h-screen max-w-[1920px] mx-auto min-h-200 sm:min-h-160 md:min-h-152 lg:min-h-0 flex flex-col justify-center items-center bg-primary-background text-primary-text">
-    <div class="w-full p-6 flex flex-col justify-center items-center gap-5 lg:flex-row lg:p-0 lg:gap-0 lg:h-full">
-      <section class="w-full flex justify-center items-center lg:bg-primary-title-background lg:h-full lg:w-3/10">
+    <section class="w-full p-6 flex flex-col justify-center items-center gap-5 lg:flex-row lg:p-0 lg:gap-0 lg:h-full">
+      <div class="w-full flex justify-center items-center lg:bg-primary-title-background lg:h-full lg:w-3/10">
         <figure>
           <img class="rounded-full w-38 md:w-50 xl:w-60" :src="avatar" alt="Higor Moroni" />
         </figure>
-      </section>
+      </div>
 
-      <section class="w-full flex flex-col lg:h-full lg:w-7/10 lg:p-12">
+      <div class="w-full flex flex-col lg:h-full lg:w-7/10 lg:p-12">
         <div class="w-full flex flex-col gap-5 items-center py-5 lg:h-full lg:justify-center lg:items-start lg:gap-10 xl:gap-6">
           <h1 class="flex flex-col items-center text-5xl/14 lg:items-start xl:text-7xl/20">
             <span class="font-light">Higor</span>
             <span class="text-highlight-text uppercase font-bold">Moroni</span>
           </h1>
   
-          <h2 class="font-light xl:text-2xl">Desenvolvedor Front-end III</h2>
+          <h2 class="font-light xl:text-2xl">Desenvolvedor de Software</h2>
   
           <div class="w-full flex flex-col gap-2 items-center text-2xl lg:items-start">
             <ul class="flex gap-2">
@@ -90,7 +90,7 @@ import avatar from '@/assets/avatar.webp';
             <a>moroni@higor.dev</a>
           </div>
         </div>
-      </section>
-    </div>
+      </div>
+    </section>
   </header>
 </template>
