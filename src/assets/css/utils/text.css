@@ -1,4 +1,4 @@
-strong {
+strong, h3, h4 {
   @apply font-bold text-secondary-text;
 }
 
