@@ -3,5 +3,5 @@ strong {
 }
 
 a {
-  @apply hover:text-highlight-text cursor-pointer; 
+  @apply hover:text-highlight cursor-pointer; 
 }
