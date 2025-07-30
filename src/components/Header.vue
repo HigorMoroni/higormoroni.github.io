@@ -4,7 +4,7 @@ import avatar from '@/assets/avatar.webp';
 
 <template>
   <header class="h-screen max-w-[1920px] mx-auto min-h-200 sm:min-h-160 md:min-h-152 lg:min-h-0 flex flex-col justify-center items-center bg-primary-background">
-    <section class="w-full p-6 flex flex-col justify-center items-center gap-5 lg:flex-row lg:p-0 lg:gap-0 lg:h-full">
+    <section class="w-full p-6 flex flex-col justify-center items-center gap-5 lg:flex-row md:p-11 lg:p-0 lg:gap-0 lg:h-full">
       <div class="w-full flex justify-center items-center lg:bg-primary-title-background lg:h-full lg:w-3/10">
         <figure>
           <img class="rounded-full w-38 md:w-50 xl:w-60" :src="avatar" alt="Higor Moroni" />
