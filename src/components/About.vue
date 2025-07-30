@@ -3,7 +3,7 @@ import DefaultLayout from '@/layouts/default.vue';
 </script>
 
 <template>
-  <DefaultLayout>
+  <DefaultLayout variation="secondary">
     <template #title>
       <h2 class="uppercase font-bold text-base">Sobre mim</h2>
       <p>Apenas um resumo.</p>

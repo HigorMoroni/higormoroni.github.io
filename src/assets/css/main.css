@@ -5,5 +5,5 @@
 
 body {
   font-family: 'Lato', sans-serif;
-  @apply text-sm/6 text-primary-text;
+  @apply text-sm/6 text-primary-text bg-primary-page-background;
 }
