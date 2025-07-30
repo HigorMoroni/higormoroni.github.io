@@ -5,7 +5,9 @@ import Skills from '@/components/Skills.vue';
 </script>
 
 <template>
-  <Header />
-  <About />
-  <Skills />
+  <main class="max-w-[1920px] mx-auto">
+    <Header />
+    <About />
+    <Skills />
+  </main>
 </template>
