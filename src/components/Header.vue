@@ -4,14 +4,14 @@ import avatar from '@/assets/avatar.webp';
 
 <template>
   <header class="h-screen min-h-214 sm:min-h-170 md:min-h-160 lg:min-h-0 flex flex-col justify-center items-center bg-primary-background">
-    <section class="w-full p-6 flex flex-col justify-center items-center lg:flex-row md:p-11 lg:p-0 lg:gap-0 lg:h-full">
+    <section class="w-full p-6 flex flex-col justify-center items-center lg:flex-row md:p-12 lg:p-0 lg:gap-0 lg:h-full">
       <div class="w-full flex justify-center items-center lg:bg-primary-title-background lg:h-full lg:w-3/10">
         <figure>
           <img class="rounded-full w-38 md:w-50 xl:w-60" :src="avatar" alt="Higor Moroni" />
         </figure>
       </div>
 
-      <div class="w-full flex flex-col lg:h-full lg:w-7/10 lg:p-12">
+      <div class="w-full flex flex-col lg:h-full lg:w-7/10 lg:p-12 xl:p-16">
         <div class="w-full flex flex-col gap-5 items-center py-5 lg:h-full lg:justify-center lg:items-start lg:gap-10 xl:gap-6">
           <h1 class="flex flex-col items-center text-5xl/14 lg:items-start xl:text-7xl/20">
             <span class="font-light">Higor</span>
