@@ -5,7 +5,7 @@ import DefaultLayout from '@/layouts/default.vue';
 <template>
   <DefaultLayout variation="secondary">
     <template #title>
-      <h3 class="uppercase font-bold text-lg">Sobre mim</h3>
+      <h3>Sobre mim</h3>
       <p>Apenas um resumo.</p>
     </template>
 

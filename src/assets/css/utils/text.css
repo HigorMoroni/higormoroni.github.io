@@ -2,6 +2,10 @@ strong, h3, h4 {
   @apply font-bold text-secondary-text;
 }
 
+h3, h4 {
+  @apply uppercase font-bold text-lg;
+}
+
 a {
   @apply hover:text-highlight cursor-pointer; 
 }

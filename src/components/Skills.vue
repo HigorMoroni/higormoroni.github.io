@@ -17,7 +17,7 @@ const skills = [
 <template>
   <DefaultLayout>
     <template #title>
-      <h3 class="uppercase font-bold text-lg">Habilidades</h3>
+      <h3>Habilidades</h3>
       <p>Crescendo a cada dia.</p>
     </template>
 
