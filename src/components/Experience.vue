@@ -9,7 +9,7 @@ import DefaultLayout from '@/layouts/default.vue';
       <p>Onde eu já contribuí e aprendi.</p>
     </template>
 
-    <template #content class="text-red-500">
+    <template #content>
       <ol class="border-l-2 border-line pl-6 ml-3 relative">
         <li v-for="n in 4" class="relative">
           <div class="bg-highlight h-2.5 w-2.5 absolute -left-7.5 top-2 rounded-full shadow-[0_0_0_8px_#fff]" />
