@@ -10,11 +10,11 @@ import DefaultLayout from '@/layouts/default.vue';
     </template>
 
     <template #content>
-      <ol class="border-l-2 border-line pl-6 ml-3 relative">
-        <li v-for="n in 4" class="relative">
+      <ol class="flex flex-col border-l-2 border-line pl-6 ml-3 relative">
+        <li v-for="n in 4" class="relative mb-6">
           <div class="bg-highlight h-2.5 w-2.5 absolute -left-7.5 top-2 rounded-full shadow-[0_0_0_8px_#fff]" />
-          <div class="mb-6">
-            <div class="flex flex-col mb-2 gap-1">
+          <div>
+            <div class="flex flex-col mb-4 gap-1">
               <span class="text-xs">2017 - Presente</span>
               <h4>Prefeitura Municipal da Praia Grande</h4>
               <h5 class="font-medium text-sm text-secondary-text">Agente Administrativo</h5>
