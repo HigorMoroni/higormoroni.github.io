@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import About from '@/components/About.vue';
+import Experience from '@/components/Experience.vue';
 import Header from '@/components/Header.vue';
 import Skills from '@/components/Skills.vue';
 </script>
@@ -9,5 +10,6 @@ import Skills from '@/components/Skills.vue';
     <Header />
     <About />
     <Skills />
+    <Experience />
   </main>
 </template>
