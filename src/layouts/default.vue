@@ -33,8 +33,8 @@ const isSecondary = computed(() => props.variation === 'secondary');
       <div
         class="p-6 md:p-12 xl:p-16 lg:w-7/10"
         :class="[
-          { 'pb-0': props.hideBottomPadding },
-          { 'pt-0': props.hideTopPadding },
+          { 'pb-0!': props.hideBottomPadding },
+          { 'pt-0!': props.hideTopPadding },
           isSecondary ? 'lg:bg-secondary-content-background' : 'lg:bg-primary-content-background'
         ]"
       >
