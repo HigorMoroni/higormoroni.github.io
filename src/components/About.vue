@@ -10,7 +10,7 @@ import DefaultLayout from '@/layouts/default.vue';
     </template>
 
     <template #content>
-      <article class="flex flex-col gap-3 md:text-lg">
+      <article class="flex flex-col gap-3 text-sm/7 md:text-lg">
         <p>
           Analista Desenvolvedor de Sistemas, graduado em 2019 pela Faculdade de Tecnologia do Estado de São Paulo em Praia Grande, São Paulo. Enquanto acadêmico, atuei por 6 meses como monitor da disciplina de Algoritmos e Lógica de Programação, onde pude auxiliar os novos alunos a pensar logicamente e conhecer os conceitos fundamentais do desenvolvendo. Sou uma pessoa enérgica e bem focada, dedicada ao autoaperfeiçoamento; eu me concentro em aprender e aplicar habilidades de maneira rápida e eficiente, se houver algo para aprender e colocar em prática no processo de uma empresa, eu o faço; minha intenção é sempre dar um mergulho produtivo na empresa em que trabalho. Encontro-me estudando tecnologias JavaScript para desenvolvimento Full-stack, além de práticas de desenvolvendo web e mobile.
         </p>
