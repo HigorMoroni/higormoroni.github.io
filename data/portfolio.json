@@ -1,12 +1,15 @@
 {
   "personal": {
-    "name": "Higor Moroni",
-    "title": "Frontend Developer",
-    "email": "seu@email.com",
-    "phone": "",
-    "linkedin": "https://linkedin.com/in/higormoroni",
+    "lastName": "Moroni",
     "github": "https://github.com/HigorMoroni",
-    "bio": "Desenvolvedor Frontend apaixonado por criar experiências digitais incríveis."
+    "bio": "Desenvolvedor Frontend apaixonado por criar experiências digitais incríveis.",
+    "name": "Higor Moroni",
+    "phone": "",
+    "title": "Analista & Desenvolvedor de Sistemas",
+    "avatar": "/images/avatar.webp",
+    "firstName": "Higor",
+    "email": "seu@email.com",
+    "linkedin": "https://linkedin.com/in/higormoroni"
   },
   "projects": [
     {
@@ -14,14 +17,66 @@
       "description": "Descrição do projeto",
       "url": "https://exemplo.com",
       "repo": "https://github.com/usuario/projeto",
-      "technologies": ["Vue.js", "JavaScript", "CSS"],
+      "technologies": [
+        "Vue.js",
+        "JavaScript",
+        "CSS"
+      ],
       "featured": true
     }
   ],
   "skills": {
-    "frontend": ["Vue.js", "JavaScript", "HTML", "CSS"],
-    "backend": ["Node.js", "PHP"],
-    "tools": ["Git", "VS Code", "Figma"]
+    "frontend": [
+      "Vue.js",
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "backend": [
+      "Node.js",
+      "PHP"
+    ],
+    "tools": [
+      "Git",
+      "VS Code",
+      "Figma"
+    ],
+    "title": "Habilidades",
+    "subtitle": "Crescendo a cada dia.",
+    "techs": [
+      {
+        "name": " JavaScript ES6+",
+        "level": 75
+      },
+      {
+        "name": " HTML e CSS",
+        "level": 70
+      },
+      {
+        "name": " Git",
+        "level": 65
+      },
+      {
+        "name": "PHP",
+        "level": 65
+      },
+      {
+        "name": "Lógica de Programação",
+        "level": 96
+      },
+      {
+        "name": "Programação Funcional",
+        "level": 50
+      },
+      {
+        "name": "Hardware",
+        "level": 90
+      },
+      {
+        "name": "Excel Avançado e VBA",
+        "level": 90
+      }
+    ]
   },
   "experience": [
     {
@@ -37,5 +92,10 @@
       "course": "Ciência da Computação",
       "period": "2020 - 2024"
     }
-  ]
+  ],
+  "about": {
+    "title": "Sobre mim",
+    "subtitle": "Apenas um resumo.",
+    "content": "<p>Analista Desenvolvedor de Sistemas, graduado em 2019 pela Faculdade de Tecnologia do Estado de São Paulo em Praia Grande, São Paulo. Enquanto acadêmico, atuei por 6 meses como monitor da disciplina de Algoritmos e Lógica de Programação, onde pude auxiliar os novos alunos a pensar logicamente e conhecer os conceitos fundamentais do desenvolvendo. Sou uma pessoa enérgica e bem focada, dedicada ao autoaperfeiçoamento; eu me concentro em aprender e aplicar habilidades de maneira rápida e eficiente, se houver algo para aprender e colocar em prática no processo de uma empresa, eu o faço; minha intenção é sempre dar um mergulho produtivo na empresa em que trabalho. Encontro-me estudando tecnologias JavaScript para desenvolvimento Full-stack, além de práticas de desenvolvendo web e mobile.</p>\n<p class=\"text-highlight font-bold\">Atualmente estou em busca de uma oportunidade como Desenvolvedor Júnior ou Trainee para me aperfeiçoar e iniciar minha carreira profissional.</p>\n<p>Meu desejo é aplicar meus conhecimentos para a resolução de problemas e ajudar na entrega de projetos com alta qualidade, além de desenvolver tais conhecimentos ao obter mais experiência. Gostaria de trabalhar com metodologias ágeis e entender o ciclo de um projeto empresarial.</p>"
+  }
 }
