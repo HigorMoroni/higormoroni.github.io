@@ -1,7 +1,7 @@
 backend:
   name: github
   repo: HigorMoroni/higormoroni.github.io
-  branch: main
+  branch: master
   auth_type: implicit
   app_id: Ov23lizEMcXKZTgY3wA3
 
