@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import About from '@/components/About.vue';
+import Courses from '@/components/Courses.vue';
 import Education from '@/components/Education.vue';
 import Experience from '@/components/Experience.vue';
 import Header from '@/components/Header.vue';
@@ -17,5 +18,6 @@ import Social from '@/components/Social.vue';
     <Education />
     <Portfolio />
     <Social />
+    <Courses />
   </main>
 </template>
