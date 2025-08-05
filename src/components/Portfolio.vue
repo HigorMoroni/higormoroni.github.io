@@ -17,14 +17,14 @@ import ecoleta from '@/assets/images/portfolio/ecoleta.webp';
           v-for="n in 10"
           target="_blank"
           href="https://github.com/HigorMoroni/Ecoleta"
-          class="bg-primary-content-background relative block overflow-hidden transition-all duration-150"
+          class="portfolio__project bg-primary-content-background relative block overflow-hidden transition-all duration-150"
         >
-          <img :src="ecoleta" alt="" class="hover:opacity-20 hover:ease-in-out hover:duration-800 hover:scale-102" />
-          <div class="text-overlay-text absolute top-0 left-0 w-full max-w-sm opacity-0 p-6 duration-600 ease-in-out hover:opacity-100">
+          <img :src="ecoleta" alt="Ecoleta" class="transition-all duration-800 ease-in-out grayscale" />
+          <div class="project__content w-full h-full text-overlay-text p-6 absolute top-0 left-0 opacity-0 transition-all duration-800 ease-in-out">
             <h3>
               Ecoleta
             </h3>
-            <hr class="c-image-overlay__deco-line  t-image-overlay__deco-line" />
+            <hr class="w-0 my-3 transition-width duration-650 ease-out" />
             <p>
               Projeto completo de um sistema Web e Mobile de coleta de resíduos.
             </p>
@@ -34,3 +34,19 @@ import ecoleta from '@/assets/images/portfolio/ecoleta.webp';
     </template>
   </DefaultLayout>
 </template>
+
+<style lang="postcss" scoped>
+  .portfolio__project:hover {
+    img {
+      opacity: 0.2;
+      transform: scale(1.02);
+    }
+    .project__content {
+      opacity: 1;
+
+      hr {
+        width: 15%;
+      }
+    }
+  }
+</style>
