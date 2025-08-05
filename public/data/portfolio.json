@@ -1,0 +1,41 @@
+{
+  "personal": {
+    "name": "Higor Moroni",
+    "title": "Frontend Developer",
+    "email": "seu@email.com",
+    "phone": "",
+    "linkedin": "https://linkedin.com/in/higormoroni",
+    "github": "https://github.com/HigorMoroni",
+    "bio": "Desenvolvedor Frontend apaixonado por criar experiências digitais incríveis."
+  },
+  "projects": [
+    {
+      "name": "Projeto Exemplo",
+      "description": "Descrição do projeto",
+      "url": "https://exemplo.com",
+      "repo": "https://github.com/usuario/projeto",
+      "technologies": ["Vue.js", "JavaScript", "CSS"],
+      "featured": true
+    }
+  ],
+  "skills": {
+    "frontend": ["Vue.js", "JavaScript", "HTML", "CSS"],
+    "backend": ["Node.js", "PHP"],
+    "tools": ["Git", "VS Code", "Figma"]
+  },
+  "experience": [
+    {
+      "company": "Empresa X",
+      "position": "Frontend Developer",
+      "period": "2023 - Atual",
+      "description": "Desenvolvimento de aplicações web..."
+    }
+  ],
+  "education": [
+    {
+      "institution": "Universidade X",
+      "course": "Ciência da Computação",
+      "period": "2020 - 2024"
+    }
+  ]
+}
