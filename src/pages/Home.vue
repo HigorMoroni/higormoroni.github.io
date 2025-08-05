@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import About from '@/components/About.vue';
+import Contact from '@/components/Contact.vue';
 import Courses from '@/components/Courses.vue';
 import Education from '@/components/Education.vue';
 import Experience from '@/components/Experience.vue';
@@ -19,5 +20,6 @@ import Social from '@/components/Social.vue';
     <Portfolio />
     <Social />
     <Courses />
+    <Contact />
   </main>
 </template>
