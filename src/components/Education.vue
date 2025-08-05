@@ -12,7 +12,7 @@ import DefaultLayout from '@/layouts/default.vue';
     <template #content>
       <ol class="flex flex-col border-l-2 border-line pl-6 py-8 ml-3 relative gap-8 md:py-12">
         <div class="border-line h-[1px] w-4 absolute border -left-2.25 bottom-0"></div>
-        <li v-for="n in 2" class="relative">
+        <li v-for="n in 2" :key="n" class="relative">
           <div class="bg-highlight h-2.5 w-2.5 absolute -left-7.5 top-2 rounded-full shadow-[0_0_0_8px_#fff]" />
           <div class="flex flex-col gap-1 md:flex-row md:gap-12">
             <div class="md:w-4/10">

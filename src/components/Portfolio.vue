@@ -15,6 +15,7 @@ import ecoleta from '@/assets/images/portfolio/ecoleta.webp';
       <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 relative">
         <a
           v-for="n in 10"
+          :key="n"
           target="_blank"
           href="https://github.com/HigorMoroni/Ecoleta"
           class="portfolio__project bg-primary-content-background relative block overflow-hidden transition-all duration-150"

@@ -23,7 +23,7 @@ const skills = [
 
     <template #content>
       <ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-12">
-        <li v-for="skill in skills">
+        <li v-for="skill in skills" :key="skill.name">
           <div class="flex font-bold text-lg uppercase gap-3 mb-1">
             <span class="text-highlight">{{skill.level}}<small>%</small></span>
             <h4>{{skill.name}}</h4>
