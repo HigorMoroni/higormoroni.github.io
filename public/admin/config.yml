@@ -2,8 +2,9 @@ backend:
   name: github
   repo: HigorMoroni/higormoroni.github.io
   branch: master
-  base_url: https://api.github.com
-  auth_endpoint: oauth/authorize
+  site_domain: https://higor.dev
+  auth_type: implicit
+  app_id: Ov23lizEMcXKZTgY3wA3
 
 media_folder: public/images
 public_folder: /images
