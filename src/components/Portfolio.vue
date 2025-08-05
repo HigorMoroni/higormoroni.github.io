@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import DefaultLayout from '@/layouts/default.vue';
 
-import ecoleta from '@/assets/images/portfolio/ecoleta.png';
+import ecoleta from '@/assets/images/portfolio/ecoleta.webp';
 </script>
 
 <template>
