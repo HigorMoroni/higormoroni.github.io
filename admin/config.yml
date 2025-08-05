@@ -1,0 +1,28 @@
+backend:
+  name: github
+  repo: HigorMoroni/higormoroni.github.io
+  branch: master
+
+media_folder: public/images
+public_folder: /images
+
+collections:
+  - name: "portfolio"
+    label: "Portfolio Data"
+    files:
+      - label: "Portfolio"
+        name: "portfolio"
+        file: "public/data/portfolio.json"
+        fields:
+          - label: "Projetos"
+            name: "projects"
+            widget: "list"
+            fields:
+              - {label: "Nome", name: "name", widget: "string"}
+              - {label: "Descrição", name: "description", widget: "text"}
+              - {label: "URL", name: "url", widget: "string"}
+              - {label: "Tecnologias", name: "tech", widget: "list"}
+          - label: "Skills"
+            name: "skills"
+            widget: "list"
+            field: {label: "Skill", name: "skill", widget: "string"}
