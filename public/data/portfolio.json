@@ -1,12 +1,15 @@
 {
   "personal": {
-    "name": "Higor Moroni",
-    "title": "Frontend Developer",
-    "email": "seu@email.com",
-    "phone": "",
-    "linkedin": "https://linkedin.com/in/higormoroni",
+    "lastName": "Moroni",
     "github": "https://github.com/HigorMoroni",
-    "bio": "Desenvolvedor Frontend apaixonado por criar experiências digitais incríveis."
+    "bio": "Desenvolvedor Frontend apaixonado por criar experiências digitais incríveis.",
+    "name": "Higor Moroni",
+    "phone": "",
+    "title": "Analista & Desenvolvedor de Sistemas",
+    "avatar": "/images/avatar.webp",
+    "firstName": "Higor",
+    "email": "seu@email.com",
+    "linkedin": "https://linkedin.com/in/higormoroni"
   },
   "projects": [
     {
@@ -14,28 +17,65 @@
       "description": "Descrição do projeto",
       "url": "https://exemplo.com",
       "repo": "https://github.com/usuario/projeto",
-      "technologies": ["Vue.js", "JavaScript", "CSS"],
+      "technologies": [
+        "Vue.js",
+        "JavaScript",
+        "CSS"
+      ],
       "featured": true
     }
   ],
   "skills": {
-    "frontend": ["Vue.js", "JavaScript", "HTML", "CSS"],
-    "backend": ["Node.js", "PHP"],
-    "tools": ["Git", "VS Code", "Figma"]
-  },
-  "experience": [
-    {
-      "company": "Empresa X",
-      "position": "Frontend Developer",
-      "period": "2023 - Atual",
-      "description": "Desenvolvimento de aplicações web..."
-    }
-  ],
-  "education": [
-    {
-      "institution": "Universidade X",
-      "course": "Ciência da Computação",
-      "period": "2020 - 2024"
-    }
-  ]
+    "frontend": [
+      "Vue.js",
+      "JavaScript",
+      "HTML",
+      "CSS"
+    ],
+    "backend": [
+      "Node.js",
+      "PHP"
+    ],
+    "tools": [
+      "Git",
+      "VS Code",
+      "Figma"
+    ],
+    "title": "Habilidades",
+    "subtitle": "Crescendo a cada dia.",
+    "techs": [
+      {
+        "name": " JavaScript ES6+",
+        "level": 75
+      },
+      {
+        "name": " HTML e CSS",
+        "level": 70
+      },
+      {
+        "name": " Git",
+        "level": 65
+      },
+      {
+        "name": "PHP",
+        "level": 65
+      },
+      {
+        "name": "Lógica de Programação",
+        "level": 96
+      },
+      {
+        "name": "Programação Funcional",
+        "level": 50
+      },
+      {
+        "name": "Hardware",
+        "level": 90
+      },
+      {
+        "name": "Excel Avançado e VBA",
+        "level": 90
+      }
+    ]
+  }
 }
