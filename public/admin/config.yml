@@ -1,9 +1,9 @@
 backend:
   name: github
   repo: HigorMoroni/higormoroni.github.io
-  branch: master
-  auth_type: oauth
-  client_id: Ov23lizEMcXKZTgY3wA3
+  branch: main
+  auth_type: implicit
+  app_id: Ov23lizEMcXKZTgY3wA3
 
 media_folder: public/images
 public_folder: /images
