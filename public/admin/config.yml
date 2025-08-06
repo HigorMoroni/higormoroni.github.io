@@ -63,8 +63,8 @@ collections:
                 fields:
                   - {label: "Empresa", name: "company", widget: "string"}
                   - {label: "Cargo", name: "position", widget: "string"}
-                  - {label: "Data de Início", name: "startDate", widget: "datetime", date_format: "YYYY", time_format: false}
-                  - {label: "Data de Fim", name: "endDate", widget: "datetime", date_format: "YYYY", time_format: false, required: false}
+                  - {label: "Data de Início", name: "startDate", widget: "datetime", date_format: "MM/YYYY", time_format: false}
+                  - {label: "Data de Fim", name: "endDate", widget: "datetime", date_format: "MM/YYYY", time_format: false, required: false}
                   - {label: "Localização", name: "location", widget: "string"}
                   - {label: "Trabalho Atual", name: "current", widget: "boolean", default: false}
                   - {label: "Descrição", name: "description", widget: "text"}
@@ -110,6 +110,8 @@ collections:
             name: "socials"
             widget: "object"
             fields:
+              - {label: "Título da Seção", name: "title", widget: "string", default: "Minhas Redes"}
+              - {label: "Subtítulo da Seção", name: "subtitle", widget: "string"}
               - {label: "LinkedIn", name: "linkedin", widget: "string"}
               - {label: "GitHub", name: "github", widget: "string"}
               - {label: "Instagram", name: "instagram", widget: "string"}
@@ -143,17 +145,13 @@ collections:
               - {label: "Título do Site", name: "siteTitle", widget: "string"}
               - {label: "Descrição do Site (Meta)", name: "siteDescription", widget: "text"}
               - {label: "Palavras-chave (SEO)", name: "keywords", widget: "string", required: false}
-              - {label: "Cor Primária", name: "primaryColor", widget: "string", required: false}
-              - {label: "Cor Secundária", name: "secondaryColor", widget: "string", required: false}
               - {label: "Favicon", name: "favicon", widget: "image", required: false}
-              - {label: "Logo", name: "logo", widget: "image", required: false}
               - {label: "Google Analytics ID", name: "googleAnalytics", widget: "string", required: false}
-              - {label: "Mostrar Seção Sobre", name: "showAbout", widget: "boolean", default: true}
-              - {label: "Mostrar Seção Skills", name: "showSkills", widget: "boolean", default: true}
-              - {label: "Mostrar Seção Projetos", name: "showProjects", widget: "boolean", default: true}
-              - {label: "Mostrar Seção Experiência", name: "showExperience", widget: "boolean", default: true}
-              - {label: "Mostrar Seção Educação", name: "showEducation", widget: "boolean", default: true}
-              - {label: "Mostrar Seção Certificações", name: "showCertifications", widget: "boolean", default: true}
-              - {label: "Mostrar Seção Serviços", name: "showServices", widget: "boolean", default: false}
-              - {label: "Mostrar Seção Depoimentos", name: "showTestimonials", widget: "boolean", default: false}
-              - {label: "Mostrar Seção Contato", name: "showContact", widget: "boolean", default: true}
+              - {label: "Mostrar Seção Sobre Mim", name: "showAbout", widget: "boolean", default: true, required: false}
+              - {label: "Mostrar Seção Habilidades", name: "showSkills", widget: "boolean", default: true, required: false}
+              - {label: "Mostrar Seção Experiência", name: "showExperience", widget: "boolean", default: true, required: false}
+              - {label: "Mostrar Seção Formação", name: "showEducation", widget: "boolean", default: true, required: false}
+              - {label: "Mostrar Seção Projetos", name: "showProjects", widget: "boolean", default: true, required: false}
+              - {label: "Mostrar Seção Redes Sociais", name: "showSocials", widget: "boolean", default: true, required: false}
+              - {label: "Mostrar Seção Próximos Cursos", name: "showCourses", widget: "boolean", default: true, required: false}
+              - {label: "Mostrar Seção Contato", name: "showContact", widget: "boolean", default: true, required: false}
