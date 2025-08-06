@@ -11,36 +11,7 @@
     "email": "seu@email.com",
     "linkedin": "https://linkedin.com/in/higormoroni"
   },
-  "projects": [
-    {
-      "name": "Projeto Exemplo",
-      "description": "Descrição do projeto",
-      "url": "https://exemplo.com",
-      "repo": "https://github.com/usuario/projeto",
-      "technologies": [
-        "Vue.js",
-        "JavaScript",
-        "CSS"
-      ],
-      "featured": true
-    }
-  ],
   "skills": {
-    "frontend": [
-      "Vue.js",
-      "JavaScript",
-      "HTML",
-      "CSS"
-    ],
-    "backend": [
-      "Node.js",
-      "PHP"
-    ],
-    "tools": [
-      "Git",
-      "VS Code",
-      "Figma"
-    ],
     "title": "Habilidades",
     "subtitle": "Crescendo a cada dia.",
     "techs": [
