@@ -2,8 +2,7 @@ backend:
   name: github
   repo: HigorMoroni/higormoroni.github.io
   branch: master
-  auth_type: oauth
-  client_id: Ov23lizEMcXKZTgY3wA3
+  base_url: https://decap.higor.dev
 
 media_folder: public/images
 public_folder: /images
