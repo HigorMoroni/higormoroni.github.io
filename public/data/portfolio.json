@@ -1,4 +1,10 @@
 {
+  "contact": {
+    "city": "Santos, SP",
+    "phone": "(13) 98868-5814",
+    "page": "www.higor.dev",
+    "email": "moroni@higor.dev"
+  },
   "personal": {
     "lastName": "Moroni",
     "github": "https://github.com/HigorMoroni",
@@ -46,6 +52,117 @@
       {
         "name": "Excel Avançado e VBA",
         "level": 90
+      }
+    ]
+  },
+  "settings": {
+    "primaryColor": "",
+    "showContact": true,
+    "showExperience": true,
+    "keywords": "",
+    "showEducation": true,
+    "showAbout": true,
+    "showTestimonials": true,
+    "siteTitle": "teste",
+    "siteDescription": "teste",
+    "showCertifications": true,
+    "showProjects": true,
+    "showServices": true,
+    "showSkills": true
+  },
+  "socials": {
+    "linkedin": "https://www.linkedin.com/in/higormoroni/",
+    "github": "https://github.com/HigorMoroni",
+    "instagram": "https://www.instagram.com/moroni.higor/"
+  },
+  "education": {
+    "title": "Formação",
+    "subtitle": "Onde aprendi a aprender.",
+    "items": [
+      {
+        "status": "Concluído",
+        "degree": "Graduação, Análise e Desenvolvimento de Sistemas",
+        "institution": "Faculdade de Tecnologia do Estado de São Paulo",
+        "period": "2015 – 2019",
+        "description": "Monitoria Acadêmica: Algoritmos e Lógica de Programação;\nTCC: BateVolta - Sistema de Gerenciamento de Viagens,",
+        "location": "Praia Grande, SP"
+      }
+    ]
+  },
+  "experience": {
+    "title": "Experiência",
+    "subtitle": "Onde eu já contribuí e aprendi.",
+    "items": [
+      {
+        "current": true,
+        "company": "Melhor Envio",
+        "position": "Desenvolvedor Front-end III",
+        "startDate": "2022",
+        "endDate": "2025",
+        "location": "São Paulo, SP",
+        "description": "Alocado no squad Financeiro da Melhor Envio.\n\nPrincipais atividades desenvolvidas:\n• Features | Fixes no sistema oficial do Melhor Envio, site e área logada. \n\nPrincipais tecnologias utilizadas:\n• Vue2 | Vue3;\n• HTML | Pug | SFC;\n• CSS | Stylus | Tailwind CSS | PostCSS;\n• JavaScript | Typescript;\n• Vitest | Jest;\n• Vite | Gulp;\n• Git | Gitflow | Jira."
+      },
+      {
+        "current": false,
+        "position": "Desenvolvedor Front-end",
+        "company": "Publicis Groupe Brasil",
+        "startDate": "2020",
+        "endDate": "2022",
+        "location": "São Paulo, SP",
+        "description": "Alocado no cliente Honda Motors do Brasil em modelo FEE.\n\nPrincipais atividades desenvolvidas:\n• Features | Fixes no site oficial da Honda BR e outras plataformas do multisites Honda.\n\nPrincipais tecnologias utilizadas:\n• Drupal;\n• React | Next | Vue;\n• HTML | Twig;\n• CSS | Sass | Stylus;\n• JavaScript | Jquery | Jails | JSON;\n• Gulp | Bower | Webpack | Node.js; \n• PHP | Mysql;\n• Acquia Cloud;\n• Git | Gitflow | Jira."
+      },
+      {
+        "current": false,
+        "company": "Escola Técnica Estadual de São Paulo",
+        "position": "Professor Técnico",
+        "startDate": "2022",
+        "endDate": "2024",
+        "location": "Santos, SP",
+        "description": "Principais disciplinas lecionadas:\n• Algoritmos e Lógica de Programação;\n• Introdução à programação web;\n• Fundamentos de Front-end\n• Frameworks Reativos (foco em Vue). \n\nPrincipais atividades desenvolvidas:\n• Ministrar aulas teóricas e práticas de nível técnico;\n• Propor, corrigir e revisar exercícios e sanar dúvidas. \n\nPrincipais tecnologias utilizadas:\n• Portugol | C#;\n• HTML | CSS | JavaScript;\n• ES6+ | Vue | Node;\n• Git"
+      },
+      {
+        "current": false,
+        "company": "Faculdade de Tecnologia do Estado de São Paulo",
+        "position": "Monitor Acadêmico",
+        "startDate": "2018",
+        "endDate": "2018",
+        "location": "Praia Grande, SP",
+        "description": "Monitoria acadêmica em Algoritmos e Lógica de Programação. \n\nPrincipais atividades desenvolvidas:\n• Auxílio no aprendizado dos alunos interessados em monitoria;\n• Correção e revisão de exercícios propostos;\n• Organização de grupos e salas de estudos baseados em literaturas e conhecimentos adquiridos."
+      }
+    ]
+  },
+  "about": {
+    "title": "Sobre mim",
+    "subtitle": "Apenas um resumo.",
+    "content": "<p>Analista Desenvolvedor de Sistemas, graduado em 2019 pela Faculdade de Tecnologia do Estado de São Paulo em Praia Grande, São Paulo. Enquanto acadêmico, atuei por 6 meses como monitor da disciplina de Algoritmos e Lógica de Programação, onde pude auxiliar os novos alunos a pensar logicamente e conhecer os conceitos fundamentais do desenvolvendo. Sou uma pessoa enérgica e bem focada, dedicada ao autoaperfeiçoamento; eu me concentro em aprender e aplicar habilidades de maneira rápida e eficiente, se houver algo para aprender e colocar em prática no processo de uma empresa, eu o faço; minha intenção é sempre dar um mergulho produtivo na empresa em que trabalho. Encontro-me estudando tecnologias JavaScript para desenvolvimento Full-stack, além de práticas de desenvolvendo web e mobile.</p>\n<p class=\"text-highlight font-bold\">Atualmente estou em busca de uma oportunidade como Desenvolvedor Júnior ou Trainee para me aperfeiçoar e iniciar minha carreira profissional.</p>\n<p>Meu desejo é aplicar meus conhecimentos para a resolução de problemas e ajudar na entrega de projetos com alta qualidade, além de desenvolver tais conhecimentos ao obter mais experiência. Gostaria de trabalhar com metodologias ágeis e entender o ciclo de um projeto empresarial.</p>"
+  },
+  "courses": {
+    "title": "Cursos em Andamento",
+    "subtitle": "Em breve desenvolvendo muito mais.",
+    "items": [
+      {
+        "name": "Aws",
+        "image": "/images/aws.svg"
+      }
+    ]
+  },
+  "projects": {
+    "title": "Portfólio",
+    "subtitle": "Aqui as coisas começam a ficar interessantes.",
+    "items": [
+      {
+        "name": "Ecoleta",
+        "description": "Projeto completo de um sistema Web e Mobile de coleta de resíduos.",
+        "image": "/images/ecoleta.webp",
+        "liveUrl": "/ecoleta",
+        "repoUrl": "https://github.com/HigorMoroni/ecoleta",
+        "tecs": [
+          "React",
+          "Node",
+          "Javascript",
+          "Express",
+          "Typescript"
+        ]
       }
     ]
   }
