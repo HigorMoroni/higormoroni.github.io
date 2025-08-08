@@ -1,5 +1,19 @@
 <script setup lang="ts">
-import avatar from '@/assets/images/avatar.webp';
+const props = defineProps<{
+  personalData: {
+    avatar: string;
+    firstName: string;
+    lastName: string;
+    title: string;
+  };
+  socialsData: {
+    github: string;
+    linkedin: string;
+    instagram: string;
+  };
+}>();
+
+const fullName: string = `${props.personalData.firstName} ${props.personalData.lastName}`;
 </script>
 
 <template>
@@ -7,18 +21,18 @@ import avatar from '@/assets/images/avatar.webp';
     <section class="w-full p-6 flex flex-col justify-center items-center lg:flex-row md:p-12 lg:p-0 lg:gap-0 lg:h-full">
       <div class="w-full flex justify-center items-center lg:bg-primary-title-background lg:h-full lg:w-3/10">
         <figure>
-          <img class="rounded-full w-38 md:w-50 xl:w-60" :src="avatar" alt="Higor Moroni" />
+          <img class="rounded-full w-38 md:w-50 xl:w-60" :src="props.personalData.avatar" :alt="fullName" />
         </figure>
       </div>
 
       <div class="w-full flex flex-col lg:h-full lg:w-7/10 lg:p-12 xl:p-16">
         <div class="w-full flex flex-col gap-5 items-center py-5 lg:h-full lg:justify-center lg:items-start lg:gap-10 xl:gap-6">
           <h1 class="flex flex-col items-center text-5xl/14 lg:items-start xl:text-7xl/20">
-            <span class="font-light">Higor</span>
-            <span class="text-highlight uppercase font-bold">Moroni</span>
+            <span class="font-light">{{ props.personalData.firstName }}</span>
+            <span class="text-highlight uppercase font-bold">{{ props.personalData.lastName }}</span>
           </h1>
   
-          <h2 class="font-light xl:text-2xl">Desenvolvedor de Software</h2>
+          <h2 class="font-light xl:text-2xl">{{ props.personalData.title }}</h2>
   
           <div class="w-full flex flex-col gap-2 items-center text-2xl lg:items-start">
             <ul class="flex gap-2">
@@ -40,31 +54,14 @@ import avatar from '@/assets/images/avatar.webp';
             </ul>
             <div class="w-full flex justify-center lg:justify-between items-center">
               <ul class="flex gap-2">
-                <li>
-                  <a>
-                    <ion-icon name="sunny-outline" class="active" />
-                  </a>
-                </li>
-                <li>
-                  <a>
-                    <ion-icon name="moon-outline" />
-                  </a>
-                </li>
+                <li><a><ion-icon name="sunny-outline" class="active" /></a></li>
+                <li><a><ion-icon name="moon-outline" /></a></li>
               </ul>
+
               <ul class="hidden gap-2 lg:flex">
-                <li>
-                  <a href="https://github.com/HigorMoroni" target="_blank">
-                    <ion-icon name="logo-github" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.linkedin.com/in/higormoroni/" target="_blank">
-                    <ion-icon name="logo-linkedin" />
-                  </a>
-                </li>
-                <li>
-                  <a href="https://www.instagram.com/moroni.higor" target="_blank">
-                    <ion-icon name="logo-instagram" />
+                <li v-for="(url, title) in socialsData">
+                  <a :href="url" target="_blank">
+                    <ion-icon :name="`logo-${title}`" />
                   </a>
                 </li>
               </ul>
