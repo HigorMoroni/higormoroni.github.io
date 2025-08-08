@@ -7,15 +7,9 @@
   },
   "personal": {
     "lastName": "Moroni",
-    "github": "https://github.com/HigorMoroni",
-    "bio": "Desenvolvedor Frontend apaixonado por criar experiências digitais incríveis.",
-    "name": "Higor Moroni",
-    "phone": "",
     "title": "Analista & Desenvolvedor de Sistemas",
     "avatar": "/images/avatar.webp",
-    "firstName": "Higor",
-    "email": "seu@email.com",
-    "linkedin": "https://linkedin.com/in/higormoroni"
+    "firstName": "Higor"
   },
   "skills": {
     "title": "Habilidades",
@@ -156,7 +150,7 @@
         "image": "/images/ecoleta.webp",
         "liveUrl": "/ecoleta",
         "repoUrl": "https://github.com/HigorMoroni/ecoleta",
-        "tecs": [
+        "techs": [
           "React",
           "Node",
           "Javascript",
