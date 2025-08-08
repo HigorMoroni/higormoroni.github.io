@@ -1,9 +1,24 @@
-export function usePortfolio() {
-  const portfolioData = ref(null)
-  const loading = ref(false)
-  const error = ref(null)
+import { ref, type Ref } from 'vue';
 
-  const loadPortfolioData = async () => {
+interface PortfolioData {
+  about: object;
+  contact: object;
+  courses: object;
+  education: object;
+  experience: object;
+  personal: object;
+  projects: object;
+  settings: object;
+  skills: object;
+  socials: object;
+}
+
+export function usePortfolio() {
+  const portfolioData: Ref<PortfolioData | null> = ref(null)
+  const loading: Ref<boolean> = ref(false)
+  const error: Ref<string | null> = ref(null)
+
+  const loadPortfolioData = async (): Promise<void> => {
     try {
       loading.value = true
       const response = await fetch('/data/portfolio.json')
@@ -13,7 +28,7 @@ export function usePortfolio() {
       }
       
       portfolioData.value = await response.json()
-    } catch (err) {
+    } catch (err: any) {
       error.value = err.message
       console.error('Erro ao carregar portfolio:', err)
     } finally {
