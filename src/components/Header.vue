@@ -1,19 +1,11 @@
 <script setup lang="ts">
-const props = defineProps<{
-  personalData: {
-    avatar: string;
-    firstName: string;
-    lastName: string;
-    title: string;
-  };
-  socialsData: {
-    github: string;
-    linkedin: string;
-    instagram: string;
-  };
-}>();
+import { useStore } from '@/composables/useStore';
 
-const fullName: string = `${props.personalData.firstName} ${props.personalData.lastName}`;
+const store = useStore();
+
+const {personal, socials, contact} = store;
+
+const fullName = computed(() => `${personal.firstName} ${personal.lastName}`);
 </script>
 
 <template>
@@ -21,18 +13,18 @@ const fullName: string = `${props.personalData.firstName} ${props.personalData.l
     <section class="w-full p-6 flex flex-col justify-center items-center lg:flex-row md:p-12 lg:p-0 lg:gap-0 lg:h-full">
       <div class="w-full flex justify-center items-center lg:bg-primary-title-background lg:h-full lg:w-3/10">
         <figure>
-          <img class="rounded-full w-38 md:w-50 xl:w-60" :src="props.personalData.avatar" :alt="fullName" />
+          <img class="rounded-full w-38 md:w-50 xl:w-60" :src="personal.avatar" :alt="fullName" />
         </figure>
       </div>
 
       <div class="w-full flex flex-col lg:h-full lg:w-7/10 lg:p-12 xl:p-16">
         <div class="w-full flex flex-col gap-5 items-center py-5 lg:h-full lg:justify-center lg:items-start lg:gap-10 xl:gap-6">
           <h1 class="flex flex-col items-center text-5xl/14 lg:items-start xl:text-7xl/20">
-            <span class="font-light">{{ props.personalData.firstName }}</span>
-            <span class="text-highlight uppercase font-bold">{{ props.personalData.lastName }}</span>
+            <span class="font-light">{{ personal.firstName }}</span>
+            <span class="text-highlight uppercase font-bold">{{ personal.lastName }}</span>
           </h1>
   
-          <h2 class="font-light xl:text-2xl">{{ props.personalData.title }}</h2>
+          <h2 class="font-light xl:text-2xl">{{ personal.title }}</h2>
   
           <div class="w-full flex flex-col gap-2 items-center text-2xl lg:items-start">
             <ul class="flex gap-2">
@@ -59,9 +51,9 @@ const fullName: string = `${props.personalData.firstName} ${props.personalData.l
               </ul>
 
               <ul class="hidden gap-2 lg:flex">
-                <li v-for="(url, title) in socialsData">
+                <li v-for="(url, name) in socials">
                   <a :href="url" target="_blank">
-                    <ion-icon :name="`logo-${title}`" />
+                    <ion-icon :name="`logo-${name}`" />
                   </a>
                 </li>
               </ul>
@@ -72,19 +64,19 @@ const fullName: string = `${props.personalData.firstName} ${props.personalData.l
         <div class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 justify-center items-center gap-7 border-t-2 border-line pt-7">
           <div class="flex flex-col gap-3 items-center lg:items-start">
             <strong>Cidade Atual</strong>
-            <span>Santos, SP</span>
+            <span>{{ contact.city }}</span>
           </div>
           <div class="flex flex-col gap-3 items-center lg:items-start">
             <strong>Telefone</strong>
-            <a>(13) 98868-5814</a>
+            <a>{{ contact.phone }}</a>
           </div>
           <div class="flex flex-col gap-3 items-center lg:items-start">
             <strong>Site</strong>
-            <a>www.higor.dev</a>
+            <a>{{ contact.page }}</a>
           </div>
           <div class="flex flex-col gap-3 items-center lg:items-start">
             <strong>E-mail</strong>
-            <a>moroni@higor.dev</a>
+            <a>{{ contact.email }}</a>
           </div>
         </div>
       </div>
