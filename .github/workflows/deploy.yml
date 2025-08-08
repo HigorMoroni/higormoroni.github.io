@@ -1,4 +1,4 @@
-name: Deploy Vue Portifoloio to GitHub Pages
+name: Deploy Vue Portfoloio to GitHub Pages
 
 on:
   push:
