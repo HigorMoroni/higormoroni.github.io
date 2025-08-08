@@ -2,7 +2,6 @@
 const props = defineProps({
   variation: {
     type: String,
-    required: true,
     default: 'primary',
     validator: (value: string) => ['primary', 'secondary'].includes(value)
   },
