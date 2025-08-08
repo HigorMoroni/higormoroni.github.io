@@ -1,0 +1,33 @@
+.loader {
+  @apply left-1/2 top-1/2 absolute -ml-15 -mt-15;
+}
+
+.loader::before, .loader::after{
+  @apply absolute w-5 h-5 top-0 bg-highlight;
+  content: "";
+  left: calc(50% - 10px);
+  animation: squaremove 1s ease-in-out infinite;
+}
+
+.loader::after{
+  bottom: 0;
+  animation-delay: 0.5s;
+}
+
+@keyframes squaremove{
+  0%, 100%{
+    transform: translate(0,0) rotate(0);
+  }
+
+  25%{
+    transform: translate(40px,40px) rotate(45deg);
+  }
+
+  50%{
+    transform: translate(0px,80px) rotate(0deg);
+  }
+
+  75%{
+    transform: translate(-40px,40px) rotate(45deg);
+  }
+}

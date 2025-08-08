@@ -2,6 +2,7 @@
 
 @import "./configs";
 @import "./utils";
+@import "./components";
 
 body {
   font-family: 'Lato', sans-serif;
