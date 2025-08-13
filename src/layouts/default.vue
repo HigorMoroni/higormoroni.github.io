@@ -1,5 +1,13 @@
 <script setup lang="ts">
 const props = defineProps({
+  title: {
+    type: String,
+    default: ''
+  },
+  subtitle: {
+    type: String,
+    default: ''
+  },
   variation: {
     type: String,
     default: 'primary',
@@ -25,7 +33,10 @@ const isSecondary = computed(() => props.variation === 'secondary');
         class="p-6 flex flex-col gap-2 border-y border-line bg-mobile-title-background md:p-12 xl:p-16 lg:border-none lg:text-right lg:w-3/10"
         :class="[isSecondary ? 'lg:bg-secondary-title-background' : 'lg:bg-primary-title-background']"
       >
-        <slot name="title" />
+        <slot name="title">
+          <h3>{{ title }}</h3>
+          <p>{{ subtitle }}</p>
+        </slot>
       </div>
       <div
         class="p-6 md:p-12 xl:p-16 lg:w-7/10"

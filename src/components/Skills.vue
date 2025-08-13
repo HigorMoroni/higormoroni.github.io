@@ -1,28 +1,15 @@
 <script setup lang="ts">
+import { useStore } from '@/composables/useStore';
 import DefaultLayout from '@/layouts/default.vue';
 
-const skills = [
-  { name: 'JavaScript ES6+', level: 75 },
-  { name: 'HTML e CSS', level: 70 },
-  { name: 'Git', level: 65 },
-  { name: 'PHP', level: 65 },
-  { name: 'Lógica de Programação', level: 96 },
-  { name: 'Programação Funcional', level: 50 },
-  { name: 'Hardware', level: 90 },
-  { name: 'Excel Avançado e VBA', level: 90 }
-];
+const { skills } = useStore();
 </script>
 
 <template>
-  <DefaultLayout>
-    <template #title>
-      <h3>Habilidades</h3>
-      <p>Crescendo a cada dia.</p>
-    </template>
-
+  <DefaultLayout :title="skills.title" :subtitle="skills.subtitle">
     <template #content>
       <ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-12">
-        <li v-for="skill in skills" :key="skill.name">
+        <li v-for="skill in skills" :key="skill.">
           <div class="flex font-bold text-lg uppercase gap-3 mb-1">
             <span class="text-highlight">{{ skill.level }}<small>%</small></span>
             <h4>{{ skill.name }}</h4>
