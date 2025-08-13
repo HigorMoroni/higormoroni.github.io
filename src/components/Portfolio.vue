@@ -1,32 +1,26 @@
 <script setup lang="ts">
+import { useStore } from '@/composables/useStore';
 import DefaultLayout from '@/layouts/default.vue';
+
+const { projects } = useStore();
 </script>
 
 <template>
-  <DefaultLayout variation="secondary">
-    <template #title>
-      <h3>Portfólio</h3>
-      <p>Aqui as coisas começam a ficar interessantes.</p>
-    </template>
-
+  <DefaultLayout variation="secondary" :title="projects.title" :subtitle="projects.subtitle">
     <template #content>
       <div class="grid gap-6 grid-cols-1 sm:grid-cols-2 relative">
         <a
-          v-for="n in 10"
-          :key="n"
+          v-for="item in projects.items"
+          :key="item.name"
+          :href="item.repoUrl"
           target="_blank"
-          href="https://github.com/HigorMoroni/Ecoleta"
           class="portfolio__project bg-primary-content-background relative block overflow-hidden transition-all duration-150"
         >
-          <img src="#" alt="Ecoleta" class="transition-all duration-800 ease-in-out grayscale">
+          <img :src="item.image" :alt="item.name" class="transition-all duration-800 ease-in-out grayscale">
           <div class="project__content w-full h-full text-overlay-text p-6 absolute top-0 left-0 opacity-0 transition-all duration-800 ease-in-out">
-            <h3>
-              Ecoleta
-            </h3>
+            <h3>{{ item.name }}</h3>
             <hr class="w-0 my-3 transition-width duration-650 ease-out">
-            <p>
-              Projeto completo de um sistema Web e Mobile de coleta de resíduos.
-            </p>
+            <p>{{ item.description }}</p>
           </div>
         </a>
       </div>
