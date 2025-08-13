@@ -46,6 +46,7 @@ export interface SettingsData {
 export interface SocialsItem {
   title: string
   url: string
+  description: string
 }
 export interface SocialsData {
   title: string

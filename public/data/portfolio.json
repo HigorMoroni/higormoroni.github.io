@@ -86,15 +86,18 @@
     "items": [
       {
         "title": "LinkedIn",
-        "url": "https://www.linkedin.com/in/higormoroni/"
+        "url": "https://www.linkedin.com/in/higormoroni/",
+        "description": "Minha rede social profissional."
       },
       {
         "title": "Github",
-        "url": "https://github.com/HigorMoroni"
+        "url": "https://github.com/HigorMoroni",
+        "description": "Meus projetos de código-aberto para sua análise."
       },
       {
         "title": "Instagram",
-        "url": "https://www.instagram.com/moroni.higor/"
+        "url": "https://www.instagram.com/moroni.higor/",
+        "description": "E também minha rede social pessoal."
       }
     ]
   },

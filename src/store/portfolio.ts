@@ -73,9 +73,9 @@ export const usePortfolioStore = defineStore('portfolio', {
       techs: []
     },
     socials: {
-      linkedin: '',
-      github: '',
-      instagram: ''
+      title: '',
+      subtitle: '',
+      items: []
     }
   }),
 

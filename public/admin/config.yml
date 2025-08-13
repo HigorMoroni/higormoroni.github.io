@@ -118,6 +118,7 @@ collections:
                 fields:
                   - {label: Titulo, name: title, widget: string}
                   - {label: URL, name: url, widget: string}
+                  - {label: Descrição, name: description, widget: string}
 
           - label: 🏆 Próximos Cursos
             name: courses
