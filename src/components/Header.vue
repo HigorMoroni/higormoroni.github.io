@@ -3,7 +3,7 @@ import { useStore } from '@/composables/useStore';
 
 const store = useStore();
 
-const {personal, socials, contact} = store;
+const { personal, socials, contact } = store;
 
 const fullName = computed(() => `${personal.firstName} ${personal.lastName}`);
 </script>
@@ -13,7 +13,7 @@ const fullName = computed(() => `${personal.firstName} ${personal.lastName}`);
     <section class="w-full p-6 flex flex-col justify-center items-center lg:flex-row md:p-12 lg:p-0 lg:gap-0 lg:h-full">
       <div class="w-full flex justify-center items-center lg:bg-primary-title-background lg:h-full lg:w-3/10">
         <figure>
-          <img class="rounded-full w-38 md:w-50 xl:w-60" :src="personal.avatar" :alt="fullName" />
+          <img class="rounded-full w-38 md:w-50 xl:w-60" :src="personal.avatar" :alt="fullName">
         </figure>
       </div>
 
@@ -23,28 +23,30 @@ const fullName = computed(() => `${personal.firstName} ${personal.lastName}`);
             <span class="font-light">{{ personal.firstName }}</span>
             <span class="text-highlight uppercase font-bold">{{ personal.lastName }}</span>
           </h1>
-  
-          <h2 class="font-light xl:text-2xl">{{ personal.title }}</h2>
-  
+
+          <h2 class="font-light xl:text-2xl">
+            {{ personal.title }}
+          </h2>
+
           <div class="w-full flex flex-col gap-2 items-center text-2xl lg:items-start">
             <ul class="flex gap-2">
               <li>
                 <a href="#">
-                  <span class="fi fi-br rounded"></span>
+                  <span class="fi fi-br rounded" />
                 </a>
               </li>
               <li>
                 <a href="#" class="grayscale hover:grayscale-0 transition-all duration-500">
-                  <span class="fi fi-us rounded"></span>
+                  <span class="fi fi-us rounded" />
                 </a>
               </li>
               <li>
                 <a href="#" class="grayscale hover:grayscale-0 transition-all duration-500">
-                  <span class="fi fi-es rounded"></span>
+                  <span class="fi fi-es rounded" />
                 </a>
               </li>
             </ul>
-            
+
             <div class="w-full flex justify-center lg:justify-between items-center">
               <ul class="flex gap-2">
                 <li><a><ion-icon name="sunny-outline" class="active" /></a></li>
@@ -52,7 +54,7 @@ const fullName = computed(() => `${personal.firstName} ${personal.lastName}`);
               </ul>
 
               <ul class="hidden gap-2 lg:flex">
-                <li v-for="(url, name) in socials">
+                <li v-for="(url, name) in socials" :key="name">
                   <a :href="url" target="_blank">
                     <ion-icon :name="`logo-${name}`" />
                   </a>
@@ -61,23 +63,11 @@ const fullName = computed(() => `${personal.firstName} ${personal.lastName}`);
             </div>
           </div>
         </div>
-  
+
         <div class="w-full grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 justify-center items-center gap-7 border-t-2 border-line pt-7">
-          <div class="flex flex-col gap-3 items-center lg:items-start">
-            <strong>Cidade Atual</strong>
-            <span>{{ contact.city }}</span>
-          </div>
-          <div class="flex flex-col gap-3 items-center lg:items-start">
-            <strong>Telefone</strong>
-            <a>{{ contact.phone }}</a>
-          </div>
-          <div class="flex flex-col gap-3 items-center lg:items-start">
-            <strong>Site</strong>
-            <a>{{ contact.page }}</a>
-          </div>
-          <div class="flex flex-col gap-3 items-center lg:items-start">
-            <strong>E-mail</strong>
-            <a>{{ contact.email }}</a>
+          <div v-for="method in contact.items" :key="method.title" class="flex flex-col gap-3 items-center lg:items-start">
+            <strong>{{ method.title }}</strong>
+            <span>{{ method.content }}</span>
           </div>
         </div>
       </div>
