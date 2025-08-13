@@ -126,8 +126,8 @@ collections:
                 name: "items"
                 widget: "list"
                 fields:
-                  - {label: "Nome", name: "name", widget: "string"}
-                  - {label: "Valor", name: "value", widget: "string"}
+                  - {label: "Nome da Tech", name: "name", widget: "string"}
+                  - {label: "Logo (svg)", name: "image", widget: "image"}
                   
           - label: "📧 Contato"
             name: "contact"
@@ -139,8 +139,8 @@ collections:
                 name: "items"
                 widget: "list"
                 fields:
-                  - {label: "Nome da Tech", name: "name", widget: "string"}
-                  - {label: "Logo (svg)", name: "image", widget: "image"}
+                  - {label: "Titulo", name: "title", widget: "string"}
+                  - {label: "Conteudo", name: "content", widget: "string"}
               
           - label: "⚙️ Configurações"
             name: "settings"
