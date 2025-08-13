@@ -1,9 +1,9 @@
 <script setup lang="ts">
-import DefaultLayout from '@/layouts/default.vue';
-
 import aws from '@/assets/images/courses/aws.svg';
+
 import laravel from '@/assets/images/courses/laravel.svg';
 import nosql from '@/assets/images/courses/nosql.svg';
+import DefaultLayout from '@/layouts/default.vue';
 
 const courses = [
   { name: 'AWS', img: aws },
@@ -30,7 +30,7 @@ const courses = [
             :alt="course.name"
             :title="course.name"
             class="w- transition-all duration-1000 ease-in-out grayscale hover:grayscale-0"
-          />
+          >
         </li>
       </ul>
     </template>

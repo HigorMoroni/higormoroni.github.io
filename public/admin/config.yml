@@ -8,154 +8,154 @@ media_folder: public/images
 public_folder: /images
 
 collections:
-  - name: "portfolio"
-    label: "Portfolio"
+  - name: portfolio
+    label: Portfolio
     files:
-      - label: "Dados do Portfolio"
-        name: "portfolio"
-        file: "public/data/portfolio.json"
+      - label: Dados do Portfolio
+        name: portfolio
+        file: public/data/portfolio.json
         fields:
-          - label: "👤 Informações Pessoais"
-            name: "personal"
-            widget: "object"
+          - label: 👤 Informações Pessoais
+            name: personal
+            widget: object
             fields:
-              - {label: "Nome", name: "firstName", widget: "string"}
-              - {label: "Sobrenome", name: "lastName", widget: "string"}
-              - {label: "Cargo", name: "title", widget: "string"}
-              - {label: "Foto de Perfil", name: "avatar", widget: "image"}
-              
-          - label: "ℹ️ Sobre Mim"
-            name: "about"
-            widget: "object"
-            fields:
-              - {label: "Título da Seção", name: "title", widget: "string", default: "Sobre Mim"}
-              - {label: "Subtítulo da Seção", name: "subtitle", widget: "string"}
-              - {label: "Conteudo", name: "content", widget: "markdown"}
-              
-          - label: "🚀 Habilidades"
-            name: "skills"
-            widget: "object"
-            fields:
-              - {label: "Título da Seção", name: "title", widget: "string", default: "Habilidades"}
-              - {label: "Subtítulo da Seção", name: "subtitle", widget: "string"}
-              - label: "Ferramentas"
-                name: "techs"
-                widget: "list"
-                fields:
-                  - {label: "Tecnologia", name: "name", widget: "string"}
-                  - {label: "Nível (1-100)", name: "level", widget: "number", min: 1, max: 100}
-              - label: "Soft Skills"
-                name: "soft"
-                widget: "list"
-                fields:
-                - {label: "Habilidade", name: "name", widget: "string"}
-                - {label: "Nível (1-100)", name: "level", widget: "number", min: 1, max: 100}
+              - {label: Nome, name: firstName, widget: string}
+              - {label: Sobrenome, name: lastName, widget: string}
+              - {label: Cargo, name: title, widget: string}
+              - {label: Foto de Perfil, name: avatar, widget: image}
 
-          - label: "💼 Experiência"
-            name: "experience"
-            widget: "object"
+          - label: ℹ️ Sobre Mim
+            name: about
+            widget: object
             fields:
-              - {label: "Título da Seção", name: "title", widget: "string", default: "Experiência"}
-              - {label: "Subtítulo da Seção", name: "subtitle", widget: "string"}
-              - label: "Experiências"
-                name: "items"
-                widget: "list"
-                fields:
-                  - {label: "Empresa", name: "company", widget: "string"}
-                  - {label: "Cargo", name: "position", widget: "string"}
-                  - {label: "Data de Início", name: "startDate", widget: "datetime", date_format: "MM/YYYY", time_format: false}
-                  - {label: "Data de Fim", name: "endDate", widget: "datetime", date_format: "MM/YYYY", time_format: false, required: false}
-                  - {label: "Localização", name: "location", widget: "string"}
-                  - {label: "Trabalho Atual", name: "current", widget: "boolean", default: false}
-                  - {label: "Descrição", name: "description", widget: "text"}
-                    
-          - label: "🎓 Formação"
-            name: "education"
-            widget: "object"
-            fields:
-              - {label: "Título da Seção", name: "title", widget: "string", default: "Formação"}
-              - {label: "Subtítulo da Seção", name: "subtitle", widget: "string"}
-              - label: "Formação"
-                name: "items"
-                widget: "list"
-                fields:
-                  - {label: "Curso", name: "degree", widget: "string"}
-                  - {label: "Instituição", name: "institution", widget: "string"}
-                  - {label: "Período", name: "period", widget: "string"}
-                  - {label: "Status", name: "status", widget: "select", options: ["Concluído", "Em Andamento", "Trancado"], default: "Concluído"}
-                  - {label: "Descrição", name: "description", widget: "text", required: false}
-                  - {label: "Localização", name: "location", widget: "string", required: false}
-                
-          - label: "💼 Projetos"
-            name: "projects"
-            widget: "object"
-            fields:
-              - {label: "Título da Seção", name: "title", widget: "string", default: "Portfólio"}
-              - {label: "Subtítulo da Seção", name: "subtitle", widget: "string"}
-              - label: "Lista de Projetos"
-                name: "items"
-                widget: "list"
-                fields:
-                  - {label: "Nome do Projeto", name: "name", widget: "string"}
-                  - {label: "Descrição", name: "description", widget: "string"}
-                  - {label: "Imagem", name: "image", widget: "image"}
-                  - {label: "URL do Site", name: "liveUrl", widget: "string", required: false}
-                  - {label: "URL do Repositório", name: "repoUrl", widget: "string", required: false}
-                  - label: "Tecnologias Utilizadas"
-                    name: "techs"
-                    widget: "list"
-                    field: {label: "Tecnologia", name: "tech", widget: "string"}
+              - {label: Título da Seção, name: title, widget: string, default: Sobre Mim}
+              - {label: Subtítulo da Seção, name: subtitle, widget: string}
+              - {label: Conteudo, name: content, widget: markdown}
 
-          - label: "📱 Redes Sociais"
-            name: "socials"
-            widget: "object"
+          - label: 🚀 Habilidades
+            name: skills
+            widget: object
             fields:
-              - {label: "Título da Seção", name: "title", widget: "string", default: "Minhas Redes"}
-              - {label: "Subtítulo da Seção", name: "subtitle", widget: "string"}
-              - {label: "LinkedIn", name: "linkedin", widget: "string"}
-              - {label: "GitHub", name: "github", widget: "string"}
-              - {label: "Instagram", name: "instagram", widget: "string"}
-                  
-          - label: "🏆 Próximos Cursos"
-            name: "courses"
-            widget: "object"
-            fields:
-              - {label: "Título da Seção", name: "title", widget: "string", default: "Próximos Passos"}
-              - {label: "Subtítulo da Seção", name: "subtitle", widget: "string"}
-              - label: "Tecnologias"
-                name: "items"
-                widget: "list"
+              - {label: Título da Seção, name: title, widget: string, default: Habilidades}
+              - {label: Subtítulo da Seção, name: subtitle, widget: string}
+              - label: Ferramentas
+                name: techs
+                widget: list
                 fields:
-                  - {label: "Nome da Tech", name: "name", widget: "string"}
-                  - {label: "Logo (svg)", name: "image", widget: "image"}
-                  
-          - label: "📧 Contato"
-            name: "contact"
-            widget: "object"
-            fields:
-              - {label: "Título da Seção", name: "title", widget: "string", default: "Contato"}
-              - {label: "Subtítulo da Seção", name: "subtitle", widget: "string"}
-              - label: "Metodos"
-                name: "items"
-                widget: "list"
+                  - {label: Tecnologia, name: name, widget: string}
+                  - {label: Nível (1-100), name: level, widget: number, min: 1, max: 100}
+              - label: Soft Skills
+                name: soft
+                widget: list
                 fields:
-                  - {label: "Titulo", name: "title", widget: "string"}
-                  - {label: "Conteudo", name: "content", widget: "string"}
-              
-          - label: "⚙️ Configurações"
-            name: "settings"
-            widget: "object"
+                  - {label: Habilidade, name: name, widget: string}
+                  - {label: Nível (1-100), name: level, widget: number, min: 1, max: 100}
+
+          - label: 💼 Experiência
+            name: experience
+            widget: object
             fields:
-              - {label: "Título do Site", name: "siteTitle", widget: "string"}
-              - {label: "Descrição do Site (Meta)", name: "siteDescription", widget: "text"}
-              - {label: "Palavras-chave (SEO)", name: "keywords", widget: "string", required: false}
-              - {label: "Favicon", name: "favicon", widget: "image", required: false}
-              - {label: "Google Analytics ID", name: "googleAnalytics", widget: "string", required: false}
-              - {label: "Mostrar Seção Sobre Mim", name: "showAbout", widget: "boolean", default: true, required: false}
-              - {label: "Mostrar Seção Habilidades", name: "showSkills", widget: "boolean", default: true, required: false}
-              - {label: "Mostrar Seção Experiência", name: "showExperience", widget: "boolean", default: true, required: false}
-              - {label: "Mostrar Seção Formação", name: "showEducation", widget: "boolean", default: true, required: false}
-              - {label: "Mostrar Seção Projetos", name: "showProjects", widget: "boolean", default: true, required: false}
-              - {label: "Mostrar Seção Redes Sociais", name: "showSocials", widget: "boolean", default: true, required: false}
-              - {label: "Mostrar Seção Próximos Cursos", name: "showCourses", widget: "boolean", default: true, required: false}
-              - {label: "Mostrar Seção Contato", name: "showContact", widget: "boolean", default: true, required: false}
+              - {label: Título da Seção, name: title, widget: string, default: Experiência}
+              - {label: Subtítulo da Seção, name: subtitle, widget: string}
+              - label: Experiências
+                name: items
+                widget: list
+                fields:
+                  - {label: Empresa, name: company, widget: string}
+                  - {label: Cargo, name: position, widget: string}
+                  - {label: Data de Início, name: startDate, widget: datetime, date_format: MM/YYYY, time_format: false}
+                  - {label: Data de Fim, name: endDate, widget: datetime, date_format: MM/YYYY, time_format: false, required: false}
+                  - {label: Localização, name: location, widget: string}
+                  - {label: Trabalho Atual, name: current, widget: boolean, default: false}
+                  - {label: Descrição, name: description, widget: text}
+
+          - label: 🎓 Formação
+            name: education
+            widget: object
+            fields:
+              - {label: Título da Seção, name: title, widget: string, default: Formação}
+              - {label: Subtítulo da Seção, name: subtitle, widget: string}
+              - label: Formação
+                name: items
+                widget: list
+                fields:
+                  - {label: Curso, name: degree, widget: string}
+                  - {label: Instituição, name: institution, widget: string}
+                  - {label: Período, name: period, widget: string}
+                  - {label: Status, name: status, widget: select, options: [Concluído, Em Andamento, Trancado], default: Concluído}
+                  - {label: Descrição, name: description, widget: text, required: false}
+                  - {label: Localização, name: location, widget: string, required: false}
+
+          - label: 💼 Projetos
+            name: projects
+            widget: object
+            fields:
+              - {label: Título da Seção, name: title, widget: string, default: Portfólio}
+              - {label: Subtítulo da Seção, name: subtitle, widget: string}
+              - label: Lista de Projetos
+                name: items
+                widget: list
+                fields:
+                  - {label: Nome do Projeto, name: name, widget: string}
+                  - {label: Descrição, name: description, widget: string}
+                  - {label: Imagem, name: image, widget: image}
+                  - {label: URL do Site, name: liveUrl, widget: string, required: false}
+                  - {label: URL do Repositório, name: repoUrl, widget: string, required: false}
+                  - label: Tecnologias Utilizadas
+                    name: techs
+                    widget: list
+                    field: {label: Tecnologia, name: tech, widget: string}
+
+          - label: 📱 Redes Sociais
+            name: socials
+            widget: object
+            fields:
+              - {label: Título da Seção, name: title, widget: string, default: Minhas Redes}
+              - {label: Subtítulo da Seção, name: subtitle, widget: string}
+              - {label: LinkedIn, name: linkedin, widget: string}
+              - {label: GitHub, name: github, widget: string}
+              - {label: Instagram, name: instagram, widget: string}
+
+          - label: 🏆 Próximos Cursos
+            name: courses
+            widget: object
+            fields:
+              - {label: Título da Seção, name: title, widget: string, default: Próximos Passos}
+              - {label: Subtítulo da Seção, name: subtitle, widget: string}
+              - label: Tecnologias
+                name: items
+                widget: list
+                fields:
+                  - {label: Nome da Tech, name: name, widget: string}
+                  - {label: Logo (svg), name: image, widget: image}
+
+          - label: 📧 Contato
+            name: contact
+            widget: object
+            fields:
+              - {label: Título da Seção, name: title, widget: string, default: Contato}
+              - {label: Subtítulo da Seção, name: subtitle, widget: string}
+              - label: Metodos
+                name: items
+                widget: list
+                fields:
+                  - {label: Titulo, name: title, widget: string}
+                  - {label: Conteudo, name: content, widget: string}
+
+          - label: ⚙️ Configurações
+            name: settings
+            widget: object
+            fields:
+              - {label: Título do Site, name: siteTitle, widget: string}
+              - {label: Descrição do Site (Meta), name: siteDescription, widget: text}
+              - {label: Palavras-chave (SEO), name: keywords, widget: string, required: false}
+              - {label: Favicon, name: favicon, widget: image, required: false}
+              - {label: Google Analytics ID, name: googleAnalytics, widget: string, required: false}
+              - {label: Mostrar Seção Sobre Mim, name: showAbout, widget: boolean, default: true, required: false}
+              - {label: Mostrar Seção Habilidades, name: showSkills, widget: boolean, default: true, required: false}
+              - {label: Mostrar Seção Experiência, name: showExperience, widget: boolean, default: true, required: false}
+              - {label: Mostrar Seção Formação, name: showEducation, widget: boolean, default: true, required: false}
+              - {label: Mostrar Seção Projetos, name: showProjects, widget: boolean, default: true, required: false}
+              - {label: Mostrar Seção Redes Sociais, name: showSocials, widget: boolean, default: true, required: false}
+              - {label: Mostrar Seção Próximos Cursos, name: showCourses, widget: boolean, default: true, required: false}
+              - {label: Mostrar Seção Contato, name: showContact, widget: boolean, default: true, required: false}

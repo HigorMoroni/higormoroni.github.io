@@ -9,9 +9,8 @@ const skills = [
   { name: 'Lógica de Programação', level: 96 },
   { name: 'Programação Funcional', level: 50 },
   { name: 'Hardware', level: 90 },
-  { name: 'Excel Avançado e VBA', level: 90 },
+  { name: 'Excel Avançado e VBA', level: 90 }
 ];
-
 </script>
 
 <template>
@@ -25,11 +24,11 @@ const skills = [
       <ul class="grid grid-cols-1 sm:grid-cols-2 gap-y-6 gap-x-12">
         <li v-for="skill in skills" :key="skill.name">
           <div class="flex font-bold text-lg uppercase gap-3 mb-1">
-            <span class="text-highlight">{{skill.level}}<small>%</small></span>
-            <h4>{{skill.name}}</h4>
+            <span class="text-highlight">{{ skill.level }}<small>%</small></span>
+            <h4>{{ skill.name }}</h4>
           </div>
           <div class="bg-line h-[5px]">
-            <div class="bg-highlight h-[5px] transition-all duration-3000" :style="`width: ${skill.level}%;`"/>
+            <div class="bg-highlight h-[5px] transition-all duration-3000" :style="`width: ${skill.level}%;`" />
           </div>
         </li>
       </ul>

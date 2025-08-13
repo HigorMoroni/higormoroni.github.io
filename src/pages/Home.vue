@@ -22,11 +22,11 @@ if (error.value) {
 
 <template>
   <main class="max-w-[1920px] mx-auto">
-    <div class="loader" v-if="loading" />
+    <div v-if="loading" class="loader" />
     <template v-else>
       <Header />
       <About />
-      <Skills />  
+      <Skills />
       <Experience />
       <Education />
       <Portfolio />

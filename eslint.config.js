@@ -6,5 +6,6 @@ export default antfu({
 
   rules: {
     'style/semi': ['error', 'always'],
-  },
+    'style/comma-dangle': ['error', 'never']
+  }
 });

@@ -1,7 +1,7 @@
 <script setup lang="ts">
-import DefaultLayout from '@/layouts/default.vue';
-
 import ecoleta from '@/assets/images/portfolio/ecoleta.webp';
+
+import DefaultLayout from '@/layouts/default.vue';
 </script>
 
 <template>
@@ -20,12 +20,12 @@ import ecoleta from '@/assets/images/portfolio/ecoleta.webp';
           href="https://github.com/HigorMoroni/Ecoleta"
           class="portfolio__project bg-primary-content-background relative block overflow-hidden transition-all duration-150"
         >
-          <img :src="ecoleta" alt="Ecoleta" class="transition-all duration-800 ease-in-out grayscale" />
+          <img :src="ecoleta" alt="Ecoleta" class="transition-all duration-800 ease-in-out grayscale">
           <div class="project__content w-full h-full text-overlay-text p-6 absolute top-0 left-0 opacity-0 transition-all duration-800 ease-in-out">
             <h3>
               Ecoleta
             </h3>
-            <hr class="w-0 my-3 transition-width duration-650 ease-out" />
+            <hr class="w-0 my-3 transition-width duration-650 ease-out">
             <p>
               Projeto completo de um sistema Web e Mobile de coleta de resíduos.
             </p>

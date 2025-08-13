@@ -9,7 +9,7 @@ import type {
   ProjectsData,
   SettingsData,
   SkillsData,
-  SocialsData,
+  SocialsData
 } from './types';
 // src/store/portfolio.ts
 import { defineStore } from 'pinia';
@@ -19,38 +19,38 @@ export const usePortfolioStore = defineStore('portfolio', {
     about: {
       title: '',
       subtitle: '',
-      content: '',
+      content: ''
     },
     contact: {
       title: '',
       subtitle: '',
-      items: [],
+      items: []
     },
     courses: {
       title: '',
       subtitle: '',
-      items: [],
+      items: []
     },
     education: {
       title: '',
       subtitle: '',
-      items: [],
+      items: []
     },
     experience: {
       title: '',
       subtitle: '',
-      items: [],
+      items: []
     },
     personal: {
       lastName: '',
       title: '',
       avatar: '',
-      firstName: '',
+      firstName: ''
     },
     projects: {
       title: '',
       subtitle: '',
-      items: [],
+      items: []
     },
     settings: {
       primaryColor: '',
@@ -65,18 +65,18 @@ export const usePortfolioStore = defineStore('portfolio', {
       showCertifications: false,
       showProjects: false,
       showServices: false,
-      showSkills: false,
+      showSkills: false
     },
     skills: {
       title: '',
       subtitle: '',
-      techs: [],
+      techs: []
     },
     socials: {
       linkedin: '',
       github: '',
-      instagram: '',
-    },
+      instagram: ''
+    }
   }),
 
   actions: {
@@ -109,6 +109,6 @@ export const usePortfolioStore = defineStore('portfolio', {
     },
     setSocials(data: SocialsData) {
       this.socials = data;
-    },
-  },
+    }
+  }
 });

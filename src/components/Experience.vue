@@ -17,7 +17,9 @@ import DefaultLayout from '@/layouts/default.vue';
             <div class="md:w-4/10">
               <span class="text-xs">2017 - Presente</span>
               <h4>Prefeitura Municipal da Praia Grande</h4>
-              <h5 class="font-medium text-sm text-secondary-text">Agente Administrativo</h5>
+              <h5 class="font-medium text-sm text-secondary-text">
+                Agente Administrativo
+              </h5>
               <span class="text-xs">Praia Grande, SP</span>
             </div>
             <p class="md:w-6/10">
