@@ -52,9 +52,9 @@ const fullName = computed(() => `${personal.firstName} ${personal.lastName}`);
               </ul>
 
               <ul class="hidden gap-2 lg:flex">
-                <li v-for="(url, name) in socials" :key="name">
+                <li v-for="{ title, url } in socials.items" :key="title">
                   <a :href="url" target="_blank">
-                    <ion-icon :name="`logo-${name}`" />
+                    <ion-icon :name="`logo-${title}`" />
                   </a>
                 </li>
               </ul>

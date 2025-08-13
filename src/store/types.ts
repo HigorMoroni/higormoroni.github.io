@@ -43,10 +43,14 @@ export interface SettingsData {
   showSkills: boolean
 }
 
+export interface SocialsItem {
+  title: string
+  url: string
+}
 export interface SocialsData {
-  linkedin: string
-  github: string
-  instagram: string
+  title: string
+  subtitle: string
+  items: SocialsItem[]
 }
 
 export interface EducationItem {
