@@ -44,6 +44,7 @@ const fullName = computed(() => `${personal.firstName} ${personal.lastName}`);
                 </a>
               </li>
             </ul>
+            
             <div class="w-full flex justify-center lg:justify-between items-center">
               <ul class="flex gap-2">
                 <li><a><ion-icon name="sunny-outline" class="active" /></a></li>

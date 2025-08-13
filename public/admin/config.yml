@@ -126,17 +126,21 @@ collections:
                 name: "items"
                 widget: "list"
                 fields:
-                  - {label: "Nome da Tech", name: "name", widget: "string"}
-                  - {label: "Logo (svg)", name: "image", widget: "image"}
+                  - {label: "Nome", name: "name", widget: "string"}
+                  - {label: "Valor", name: "value", widget: "string"}
                   
           - label: "📧 Contato"
             name: "contact"
             widget: "object"
             fields:
-              - {label: "Cidade", name: "city", widget: "string"}
-              - {label: "Telefone", name: "phone", widget: "string"}
-              - {label: "Website", name: "page", widget: "string"}
-              - {label: "Email", name: "email", widget: "string"}
+              - {label: "Título da Seção", name: "title", widget: "string", default: "Contato"}
+              - {label: "Subtítulo da Seção", name: "subtitle", widget: "string"}
+              - label: "Metodos"
+                name: "items"
+                widget: "list"
+                fields:
+                  - {label: "Nome da Tech", name: "name", widget: "string"}
+                  - {label: "Logo (svg)", name: "image", widget: "image"}
               
           - label: "⚙️ Configurações"
             name: "settings"
