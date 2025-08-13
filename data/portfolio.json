@@ -81,11 +81,25 @@
     "showSkills": true
   },
   "socials": {
-    "linkedin": "https://www.linkedin.com/in/higormoroni/",
-    "github": "https://github.com/HigorMoroni",
-    "instagram": "https://www.instagram.com/moroni.higor/",
     "title": "Minhas Redes",
-    "subtitle": "Sempre produzindo algo."
+    "subtitle": "Sempre produzindo algo.",
+    "items": [
+      {
+        "title": "LinkedIn",
+        "url": "https://www.linkedin.com/in/higormoroni/",
+        "description": "Minha rede social profissional."
+      },
+      {
+        "title": "Github",
+        "url": "https://github.com/HigorMoroni",
+        "description": "Meus projetos de código-aberto para sua análise."
+      },
+      {
+        "title": "Instagram",
+        "url": "https://www.instagram.com/moroni.higor/",
+        "description": "E também minha rede social pessoal."
+      }
+    ]
   },
   "education": {
     "title": "Formação",
