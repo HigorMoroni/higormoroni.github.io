@@ -6,6 +6,7 @@ export default antfu({
 
   rules: {
     'style/semi': ['error', 'always'],
-    'style/comma-dangle': ['error', 'never']
+    'style/comma-dangle': ['error', 'never'],
+    'vue/comma-dangle': ['error', 'never']
   }
 });
