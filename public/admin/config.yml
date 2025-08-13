@@ -67,7 +67,7 @@ collections:
                   - {label: Data de Fim, name: endDate, widget: datetime, date_format: MM/YYYY, time_format: false, required: false}
                   - {label: Localização, name: location, widget: string}
                   - {label: Trabalho Atual, name: current, widget: boolean, default: false}
-                  - {label: Descrição, name: description, widget: text}
+                  - {label: Descrição, name: description, widget: markdown}
 
           - label: 🎓 Formação
             name: education
@@ -83,7 +83,7 @@ collections:
                   - {label: Instituição, name: institution, widget: string}
                   - {label: Período, name: period, widget: string}
                   - {label: Status, name: status, widget: select, options: [Concluído, Em Andamento, Trancado], default: Concluído}
-                  - {label: Descrição, name: description, widget: text, required: false}
+                  - {label: Descrição, name: description, widget: markdown, required: false}
                   - {label: Localização, name: location, widget: string, required: false}
 
           - label: 💼 Projetos
