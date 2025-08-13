@@ -1,5 +1,25 @@
 {
   "contact": {
+    "title": "Contato",
+    "subtitle": "Me chama.",
+    "items": [
+      {
+        "title": "Cidade Atual",
+        "content": "Santos, SP"
+      },
+      {
+        "title": "Telefone",
+        "content": "(13) 98868-5814"
+      },
+      {
+        "title": "Site",
+        "content": "www.higor.dev"
+      },
+      {
+        "title": "E-mail",
+        "content": "moroni@higor.dev"
+      }
+    ]
   },
   "personal": {
     "lastName": "Moroni",
