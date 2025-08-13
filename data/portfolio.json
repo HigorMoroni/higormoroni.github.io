@@ -67,7 +67,9 @@
   "socials": {
     "linkedin": "https://www.linkedin.com/in/higormoroni/",
     "github": "https://github.com/HigorMoroni",
-    "instagram": "https://www.instagram.com/moroni.higor/"
+    "instagram": "https://www.instagram.com/moroni.higor/",
+    "title": "Minhas Redes",
+    "subtitle": "Sempre produzindo algo."
   },
   "education": {
     "title": "Formação",
@@ -128,7 +130,7 @@
   "about": {
     "title": "Sobre mim",
     "subtitle": "Apenas um resumo.",
-    "content": "<p>Analista Desenvolvedor de Sistemas, graduado em 2019 pela Faculdade de Tecnologia do Estado de São Paulo em Praia Grande, São Paulo. Enquanto acadêmico, atuei por 6 meses como monitor da disciplina de Algoritmos e Lógica de Programação, onde pude auxiliar os novos alunos a pensar logicamente e conhecer os conceitos fundamentais do desenvolvendo. Sou uma pessoa enérgica e bem focada, dedicada ao autoaperfeiçoamento; eu me concentro em aprender e aplicar habilidades de maneira rápida e eficiente, se houver algo para aprender e colocar em prática no processo de uma empresa, eu o faço; minha intenção é sempre dar um mergulho produtivo na empresa em que trabalho. Encontro-me estudando tecnologias JavaScript para desenvolvimento Full-stack, além de práticas de desenvolvendo web e mobile.</p>\n<p class=\"text-highlight font-bold\">Atualmente estou em busca de uma oportunidade como Desenvolvedor Júnior ou Trainee para me aperfeiçoar e iniciar minha carreira profissional.</p>\n<p>Meu desejo é aplicar meus conhecimentos para a resolução de problemas e ajudar na entrega de projetos com alta qualidade, além de desenvolver tais conhecimentos ao obter mais experiência. Gostaria de trabalhar com metodologias ágeis e entender o ciclo de um projeto empresarial.</p>"
+    "content": "<p>Sou Higor Moroni, desenvolvedor front-end especializado em <strong>Vue.js, JavaScript e Tailwind</strong> com experiência criando soluções web modernas em projetos de grande escala. Ao longo da minha trajetória, também atuei de forma full stack, explorando <strong>Node.js, SQL, Laravel</strong> e desenvolvimento mobile com <strong>React Native/Expo</strong>.</p>\n<p>Tenho facilidade para aprender novas tecnologias e gosto de trabalhar em soluções escaláveis, eficientes e com atenção especial à qualidade do código. Minha experiência como professor técnico de tecnologia fortaleceu minha habilidade de comunicação e colaboração, tornando o trabalho em equipe ainda mais natural.</p>\n<p>Já participei de equipes responsáveis por produtos de alto impacto, desde portais de grandes marcas até sistemas corporativos complexos, sempre com foco em entregar valor real para usuários e empresas. Atualmente, sigo evoluindo como profissional e aprofundando meu domínio em testes, arquitetura de front-end e na língua inglesa, além de buscar certificações que validem minha expertise.</p>\n<p class=\"text-highlight font-bold\">Atualmente, desempenho o papel de Desenvolvedor Front-end III, onde meu dia a dia é imerso em tecnologias como HTML5, CSS3, Stylus, PostCSS, Tailwind, JavaScript, ES6+, Vue, Typescript, Nuxt, Vitest, Docker, Vite, entre outras.</p>\nQuando não estou codando, gosto de explorar novidades do ecossistema JavaScript, aprender sobre design de interfaces e compartilhar conhecimento com outros desenvolvedores.\n"
   },
   "courses": {
     "title": "Cursos em Andamento",
