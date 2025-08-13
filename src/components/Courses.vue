@@ -1,14 +1,10 @@
 <script setup lang="ts">
-import aws from '@/assets/images/courses/aws.svg';
-
-import laravel from '@/assets/images/courses/laravel.svg';
-import nosql from '@/assets/images/courses/nosql.svg';
 import DefaultLayout from '@/layouts/default.vue';
 
 const courses = [
-  { name: 'AWS', img: aws },
-  { name: 'Laravel', img: laravel },
-  { name: 'NoSQL', img: nosql }
+  { name: 'AWS', img: 'aws' },
+  { name: 'Laravel', img: 'laravel' },
+  { name: 'NoSQL', img: 'nosql' }
 ];
 </script>
 
