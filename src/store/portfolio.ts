@@ -1,57 +1,56 @@
-// src/store/portfolio.ts
-import { defineStore } from 'pinia';
-import type { 
-  PortfolioState,
+import type {
   AboutData,
   ContactData,
   CoursesData,
   EducationData,
   ExperienceData,
   PersonalData,
+  PortfolioState,
   ProjectsData,
   SettingsData,
   SkillsData,
-  SocialsData
+  SocialsData,
 } from './types';
+// src/store/portfolio.ts
+import { defineStore } from 'pinia';
 
 export const usePortfolioStore = defineStore('portfolio', {
   state: (): PortfolioState => ({
     about: {
       title: '',
       subtitle: '',
-      content: ''
+      content: '',
     },
     contact: {
-      city: '',
-      phone: '',
-      page: '',
-      email: ''
+      title: '',
+      subtitle: '',
+      items: [],
     },
     courses: {
       title: '',
       subtitle: '',
-      items: []
+      items: [],
     },
     education: {
       title: '',
       subtitle: '',
-      items: []
+      items: [],
     },
     experience: {
       title: '',
       subtitle: '',
-      items: []
+      items: [],
     },
     personal: {
       lastName: '',
       title: '',
       avatar: '',
-      firstName: ''
+      firstName: '',
     },
     projects: {
       title: '',
       subtitle: '',
-      items: []
+      items: [],
     },
     settings: {
       primaryColor: '',
@@ -66,50 +65,50 @@ export const usePortfolioStore = defineStore('portfolio', {
       showCertifications: false,
       showProjects: false,
       showServices: false,
-      showSkills: false
+      showSkills: false,
     },
     skills: {
       title: '',
       subtitle: '',
-      techs: []
+      techs: [],
     },
     socials: {
       linkedin: '',
       github: '',
-      instagram: ''
-    }
+      instagram: '',
+    },
   }),
 
   actions: {
     setAbout(data: AboutData) {
-      this.about = data
+      this.about = data;
     },
     setContact(data: ContactData) {
-      this.contact = data
+      this.contact = data;
     },
     setCourses(data: CoursesData) {
-      this.courses = data
+      this.courses = data;
     },
     setEducation(data: EducationData) {
-      this.education = data
+      this.education = data;
     },
     setExperience(data: ExperienceData) {
-      this.experience = data
+      this.experience = data;
     },
     setPersonal(data: PersonalData) {
-      this.personal = data
+      this.personal = data;
     },
     setProjects(data: ProjectsData) {
-      this.projects = data
+      this.projects = data;
     },
     setSettings(data: SettingsData) {
-      this.settings = data
+      this.settings = data;
     },
     setSkills(data: SkillsData) {
-      this.skills = data
+      this.skills = data;
     },
     setSocials(data: SocialsData) {
-      this.socials = data
-    }
-  }
+      this.socials = data;
+    },
+  },
 });

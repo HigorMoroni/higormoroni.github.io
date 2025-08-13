@@ -1,8 +1,12 @@
+export interface ContactItem {
+  title: string;
+  content: string;
+}
+
 export interface ContactData {
-  city: string;
-  phone: string;
-  page: string;
-  email: string;
+  title: string;
+  subtitle: string;
+  items: ContactItem[];
 }
 
 export interface PersonalData {
