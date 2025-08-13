@@ -1,9 +1,7 @@
 <script setup lang="ts">
 import { useStore } from '@/composables/useStore';
 
-const store = useStore();
-
-const { personal, socials, contact } = store;
+const { personal, socials, contact } = useStore();
 
 const fullName = computed(() => `${personal.firstName} ${personal.lastName}`);
 </script>
