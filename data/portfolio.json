@@ -143,7 +143,7 @@
         "startDate": "2022",
         "endDate": "2025",
         "location": "São Paulo, SP",
-        "description": "Alocado no squad Financeiro da Melhor Envio.\n\n\nPrincipais atividades desenvolvidas:\n\n• Features | Fixes no sistema oficial do Melhor Envio, site e área logada. \n\n\nPrincipais tecnologias utilizadas:\n\n• Vue2 | Vue3;\n\n• HTML | Pug | SFC;\n\n• CSS | Stylus | Tailwind CSS | PostCSS;\n\n• JavaScript | Typescript;\n\n• Vitest | Jest;\n\n• Vite | Gulp;\n\n• Git | Gitflow | Jira."
+        "description": "Alocado no squad Financeiro da Melhor Envio.<br/><br/>\nPrincipais atividades desenvolvidas:<br/>\n• Features | Fixes no sistema oficial do Melhor Envio, site e área logada.<br/><br/>\nPrincipais tecnologias utilizadas:<br/>\n• Vue2 | Vue3;<br/>\n• HTML | Pug | SFC;<br/>\n• CSS | Stylus | Tailwind CSS | PostCSS;<br/>\n• JavaScript | Typescript;<br/>\n• Vitest | Jest;<br/>\n• Vite | Gulp;<br/>\n• Git | Gitflow | Jira."
       },
       {
         "current": false,
@@ -152,7 +152,7 @@
         "startDate": "2020",
         "endDate": "2022",
         "location": "São Paulo, SP",
-        "description": "Alocado no cliente Honda Motors do Brasil em modelo FEE.\n\n\nPrincipais atividades desenvolvidas:\n\n• Features | Fixes no site oficial da Honda BR e outras plataformas do multisites Honda.\n\n\nPrincipais tecnologias utilizadas:\n\n• Drupal;\n\n• React | Next | Vue;\n\n• HTML | Twig;\n\n• CSS | Sass | Stylus;\n\n• JavaScript | Jquery | Jails | JSON;\n\n• Gulp | Bower | Webpack | Node.js; \n\n• PHP | Mysql;\n\n• Acquia Cloud;\n\n• Git | Gitflow | Jira."
+        "description": "Alocado no cliente Honda Motors do Brasil em modelo FEE.<br/><br/>\nPrincipais atividades desenvolvidas:<br/>\n• Features | Fixes no site oficial da Honda BR e outras plataformas do multisites Honda.<br/><br/>\nPrincipais tecnologias utilizadas:<br/>\n• Drupal;<br/>\n• React | Next | Vue;<br/>\n• HTML | Twig;<br/>\n• CSS | Sass | Stylus;<br/>\n• JavaScript | Jquery | Jails | JSON;<br/>\n• Gulp | Bower | Webpack | Node.js;<br/>\n• PHP | Mysql;<br/>\n• Acquia Cloud;<br/>\n• Git | Gitflow | Jira."
       },
       {
         "current": false,
@@ -161,7 +161,7 @@
         "startDate": "2022",
         "endDate": "2024",
         "location": "Santos, SP",
-        "description": "Principais disciplinas lecionadas:\n\n• Algoritmos e Lógica de Programação;\n\n• Introdução à programação web;\n\n• Fundamentos de Front-end\n\n• Frameworks Reativos (foco em Vue). \n\n\nPrincipais atividades desenvolvidas:\n\n• Ministrar aulas teóricas e práticas de nível técnico;\n\n• Propor, corrigir e revisar exercícios e sanar dúvidas. \n\n\nPrincipais tecnologias utilizadas:\n\n• Portugol | C#;\n\n• HTML | CSS | JavaScript;\n\n• ES6+ | Vue | Node;\n\n• Git"
+        "description": "Principais disciplinas lecionadas:<br/>\n• Algoritmos e Lógica de Programação;<br/>\n• Introdução à programação web;<br/>\n• Fundamentos de Front-end<br/>\n• Frameworks Reativos (foco em Vue).<br/><br/>\nPrincipais atividades desenvolvidas:<br/>\n• Ministrar aulas teóricas e práticas de nível técnico;<br/>\n• Propor, corrigir e revisar exercícios e sanar dúvidas.<br/><br/>\nPrincipais tecnologias utilizadas:<br/>\n• Portugol | C#;<br/>\n• HTML | CSS | JavaScript;<br/>\n• ES6+ | Vue | Node;<br/>\n• Git"
       },
       {
         "current": false,
@@ -170,7 +170,7 @@
         "startDate": "2018",
         "endDate": "2018",
         "location": "Praia Grande, SP",
-        "description": "Monitoria acadêmica em Algoritmos e Lógica de Programação. \n\n\nPrincipais atividades desenvolvidas:\n\n• Auxílio no aprendizado dos alunos interessados em monitoria;\n\n• Correção e revisão de exercícios propostos;\n\n• Organização de grupos e salas de estudos baseados em literaturas e conhecimentos adquiridos."
+        "description": "Monitoria acadêmica em Algoritmos e Lógica de Programação.<br/><br/>\nPrincipais atividades desenvolvidas:<br/>\n• Auxílio no aprendizado dos alunos interessados em monitoria;<br/>\n• Correção e revisão de exercícios propostos;<br/>\n• Organização de grupos e salas de estudos baseados em literaturas e conhecimentos adquiridos.<br/>"
       }
     ]
   },
