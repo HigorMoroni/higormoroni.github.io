@@ -17,9 +17,7 @@ const { socials } = useStore();
           class="hover:text-inherit!"
         >
           <div class="flex gap-3">
-            <div>
-              <ion-icon :name="`logo-${media.title}`" size="large" class="mt-1" />
-            </div>
+            <ion-icon :name="`logo-${media.title}`" size="large" class="mt-1" />
             <div class="flex flex-col gap-1">
               <h3 class="text-highlight! hover:text-highlight-hover!">{{ media.title }}</h3>
               <p>{{ media.description }}</p>
