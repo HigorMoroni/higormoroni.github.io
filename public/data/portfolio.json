@@ -32,38 +32,55 @@
     "subtitle": "Crescendo a cada dia.",
     "techs": [
       {
-        "name": " JavaScript ES6+",
+        "name": "Vue.js",
+        "level": 90
+      },
+      {
+        "name": "Javascript",
+        "level": 90
+      },
+      {
+        "name": "HTML & CSS",
+        "level": 85
+      },
+      {
+        "name": "Git",
+        "level": 85
+      },
+      {
+        "name": "Tailwind",
         "level": 75
       },
       {
-        "name": " HTML e CSS",
+        "name": "Testes",
+        "level": 75
+      },
+      {
+        "name": "React",
+        "level": 75
+      },
+      {
+        "name": "Typescript",
         "level": 70
       },
       {
-        "name": " Git",
-        "level": 65
+        "name": "Node.js",
+        "level": 60
       },
       {
-        "name": "PHP",
-        "level": 65
-      },
-      {
-        "name": "Lógica de Programação",
-        "level": 96
-      },
-      {
-        "name": "Programação Funcional",
+        "name": "Laravel/PHP",
         "level": 50
       },
       {
-        "name": "Hardware",
-        "level": 90
+        "name": "SQL",
+        "level": 50
       },
       {
-        "name": "Excel Avançado e VBA",
-        "level": 90
+        "name": "React Native",
+        "level": 50
       }
-    ]
+    ],
+    "soft": []
   },
   "settings": {
     "primaryColor": "",
@@ -112,6 +129,14 @@
         "period": "2015 – 2019",
         "description": "Monitoria Acadêmica: Algoritmos e Lógica de Programação;\nTCC: BateVolta - Sistema de Gerenciamento de Viagens,",
         "location": "Praia Grande, SP"
+      },
+      {
+        "status": "Concluído",
+        "degree": "Aprendizagem Industrial, Mecânica de Usinagem",
+        "institution": "Serviço Nacional de Aprendizagem Industrial - SP",
+        "period": "2009 – 2010",
+        "description": "",
+        "location": "Santos, SP"
       }
     ]
   },
@@ -126,7 +151,7 @@
         "startDate": "2022",
         "endDate": "2025",
         "location": "São Paulo, SP",
-        "description": "Alocado no squad Financeiro da Melhor Envio.\n\nPrincipais atividades desenvolvidas:\n• Features | Fixes no sistema oficial do Melhor Envio, site e área logada. \n\nPrincipais tecnologias utilizadas:\n• Vue2 | Vue3;\n• HTML | Pug | SFC;\n• CSS | Stylus | Tailwind CSS | PostCSS;\n• JavaScript | Typescript;\n• Vitest | Jest;\n• Vite | Gulp;\n• Git | Gitflow | Jira."
+        "description": "Alocado no squad Financeiro da Melhor Envio.<br/><br/>\nPrincipais atividades desenvolvidas:<br/>\n• Features | Fixes no sistema oficial do Melhor Envio, site e área logada.<br/><br/>\nPrincipais tecnologias utilizadas:<br/>\n• Vue2 | Vue3;<br/>\n• HTML | Pug | SFC;<br/>\n• CSS | Stylus | Tailwind CSS | PostCSS;<br/>\n• JavaScript | Typescript;<br/>\n• Vitest | Jest;<br/>\n• Vite | Gulp;<br/>\n• Git | Gitflow | Jira."
       },
       {
         "current": false,
@@ -135,7 +160,7 @@
         "startDate": "2020",
         "endDate": "2022",
         "location": "São Paulo, SP",
-        "description": "Alocado no cliente Honda Motors do Brasil em modelo FEE.\n\nPrincipais atividades desenvolvidas:\n• Features | Fixes no site oficial da Honda BR e outras plataformas do multisites Honda.\n\nPrincipais tecnologias utilizadas:\n• Drupal;\n• React | Next | Vue;\n• HTML | Twig;\n• CSS | Sass | Stylus;\n• JavaScript | Jquery | Jails | JSON;\n• Gulp | Bower | Webpack | Node.js; \n• PHP | Mysql;\n• Acquia Cloud;\n• Git | Gitflow | Jira."
+        "description": "Alocado no cliente Honda Motors do Brasil em modelo FEE.<br/><br/>\nPrincipais atividades desenvolvidas:<br/>\n• Features | Fixes no site oficial da Honda BR e outras plataformas do multisites Honda.<br/><br/>\nPrincipais tecnologias utilizadas:<br/>\n• Drupal;<br/>\n• React | Next | Vue;<br/>\n• HTML | Twig;<br/>\n• CSS | Sass | Stylus;<br/>\n• JavaScript | Jquery | Jails | JSON;<br/>\n• Gulp | Bower | Webpack | Node.js;<br/>\n• PHP | Mysql;<br/>\n• Acquia Cloud;<br/>\n• Git | Gitflow | Jira."
       },
       {
         "current": false,
@@ -144,7 +169,7 @@
         "startDate": "2022",
         "endDate": "2024",
         "location": "Santos, SP",
-        "description": "Principais disciplinas lecionadas:\n• Algoritmos e Lógica de Programação;\n• Introdução à programação web;\n• Fundamentos de Front-end\n• Frameworks Reativos (foco em Vue). \n\nPrincipais atividades desenvolvidas:\n• Ministrar aulas teóricas e práticas de nível técnico;\n• Propor, corrigir e revisar exercícios e sanar dúvidas. \n\nPrincipais tecnologias utilizadas:\n• Portugol | C#;\n• HTML | CSS | JavaScript;\n• ES6+ | Vue | Node;\n• Git"
+        "description": "Principais disciplinas lecionadas:<br/>\n• Algoritmos e Lógica de Programação;<br/>\n• Introdução à programação web;<br/>\n• Fundamentos de Front-end<br/>\n• Frameworks Reativos (foco em Vue).<br/><br/>\nPrincipais atividades desenvolvidas:<br/>\n• Ministrar aulas teóricas e práticas de nível técnico;<br/>\n• Propor, corrigir e revisar exercícios e sanar dúvidas.<br/><br/>\nPrincipais tecnologias utilizadas:<br/>\n• Portugol | C#;<br/>\n• HTML | CSS | JavaScript;<br/>\n• ES6+ | Vue | Node;<br/>\n• Git"
       },
       {
         "current": false,
@@ -153,7 +178,7 @@
         "startDate": "2018",
         "endDate": "2018",
         "location": "Praia Grande, SP",
-        "description": "Monitoria acadêmica em Algoritmos e Lógica de Programação. \n\nPrincipais atividades desenvolvidas:\n• Auxílio no aprendizado dos alunos interessados em monitoria;\n• Correção e revisão de exercícios propostos;\n• Organização de grupos e salas de estudos baseados em literaturas e conhecimentos adquiridos."
+        "description": "Monitoria acadêmica em Algoritmos e Lógica de Programação.<br/><br/>\nPrincipais atividades desenvolvidas:<br/>\n• Auxílio no aprendizado dos alunos interessados em monitoria;<br/>\n• Correção e revisão de exercícios propostos;<br/>\n• Organização de grupos e salas de estudos baseados em literaturas e conhecimentos adquiridos.<br/>"
       }
     ]
   },
