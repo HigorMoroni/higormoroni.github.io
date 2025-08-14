@@ -32,38 +32,51 @@
     "subtitle": "Crescendo a cada dia.",
     "techs": [
       {
-        "name": " JavaScript ES6+",
+        "name": "Vue.js",
+        "level": 90
+      },
+      {
+        "name": "Javascript",
+        "level": 90
+      },
+      {
+        "name": "HTML & CSS",
+        "level": 85
+      },
+      {
+        "name": "Git",
+        "level": 85
+      },
+      {
+        "name": "Tailwind",
         "level": 75
       },
       {
-        "name": " HTML e CSS",
+        "name": "React",
+        "level": 75
+      },
+      {
+        "name": "Typescript",
         "level": 70
       },
       {
-        "name": " Git",
-        "level": 65
+        "name": "Node.js",
+        "level": 60
       },
       {
-        "name": "PHP",
-        "level": 65
-      },
-      {
-        "name": "Lógica de Programação",
-        "level": 96
-      },
-      {
-        "name": "Programação Funcional",
+        "name": "Laravel/PHP",
         "level": 50
       },
       {
-        "name": "Hardware",
-        "level": 90
+        "name": "SQL",
+        "level": 50
       },
       {
-        "name": "Excel Avançado e VBA",
-        "level": 90
+        "name": "React Native",
+        "level": 50
       }
-    ]
+    ],
+    "soft": []
   },
   "settings": {
     "primaryColor": "",
