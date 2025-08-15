@@ -1,7 +1,9 @@
 <script setup lang="ts">
 import { useStore } from '@/composables/useStore';
+import { useTheme } from '@/composables/useTheme';
 
 const { personal, socials, contact } = useStore();
+const { setLightTheme, setDarkTheme, isLight, isDark } = useTheme();
 
 const fullName = computed(() => `${personal.firstName} ${personal.lastName}`);
 </script>
@@ -47,8 +49,16 @@ const fullName = computed(() => `${personal.firstName} ${personal.lastName}`);
 
             <div class="w-full flex justify-center lg:justify-between items-center">
               <ul class="flex gap-2">
-                <li><a><ion-icon name="sunny-outline" class="active" /></a></li>
-                <li><a><ion-icon name="moon-outline" /></a></li>
+                <li>
+                  <a class="cursor-pointer" :class="{ 'text-highlight': isLight }" @click="setLightTheme">
+                    <ion-icon name="sunny-outline" />
+                  </a>
+                </li>
+                <li>
+                  <a class="cursor-pointer" :class="{ 'text-highlight': isDark }" @click="setDarkTheme">
+                    <ion-icon name="moon-outline" />
+                  </a>
+                </li>
               </ul>
 
               <ul class="hidden gap-2 lg:flex">
