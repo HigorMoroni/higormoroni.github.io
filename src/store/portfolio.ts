@@ -9,7 +9,8 @@ import type {
   SettingsData,
   SkillsData,
   SocialsData
-} from './types';
+} from '@/types';
+
 import { defineStore } from 'pinia';
 
 export const usePortfolioStore = defineStore('portfolio', () => {

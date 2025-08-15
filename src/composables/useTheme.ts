@@ -1,4 +1,4 @@
-import { computed } from 'vue';
+import { CHANGE_SOURCE, THEME_VALUES } from '@/constants';
 import { useThemeStore } from '@/store/theme';
 
 export function useTheme() {
@@ -9,14 +9,16 @@ export function useTheme() {
     effectiveTheme: store.effectiveTheme,
     initTheme: store.initTheme,
 
-    setLightTheme: () => store.setUserTheme('light'),
-    setDarkTheme: () => store.setUserTheme('dark'),
+    // Métodos para os botões
+    setLightTheme: () => store.setUserTheme(THEME_VALUES.LIGHT),
+    setDarkTheme: () => store.setUserTheme(THEME_VALUES.DARK),
 
-    isLight: computed(() => store.effectiveTheme === 'light'),
-    isDark: computed(() => store.effectiveTheme === 'dark'),
+    // Estados computados para os botões
+    isLight: computed(() => store.effectiveTheme === THEME_VALUES.LIGHT),
+    isDark: computed(() => store.effectiveTheme === THEME_VALUES.DARK),
 
     // Indica qual foi a última fonte de mudança
-    lastChangedByUser: computed(() => store.lastChangeSource === 'user'),
-    lastChangedBySystem: computed(() => store.lastChangeSource === 'system')
+    lastChangedByUser: computed(() => store.lastChangeSource === CHANGE_SOURCE.USER),
+    lastChangedBySystem: computed(() => store.lastChangeSource === CHANGE_SOURCE.SYSTEM)
   };
 }

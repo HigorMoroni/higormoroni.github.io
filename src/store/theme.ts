@@ -1,33 +1,37 @@
+import type { ChangeSource, ThemeValue } from '@/types';
+
 import { defineStore } from 'pinia';
 
+import { CHANGE_SOURCE, DOM_ATTRIBUTES, MEDIA_QUERIES, THEME_VALUES } from '@/constants';
+
 export const useThemeStore = defineStore('theme', () => {
-  const systemTheme = ref<'light' | 'dark'>('light');
-  const userTheme = ref<'light' | 'dark'>('light');
-  const effectiveTheme = ref<'light' | 'dark'>('light');
-  const lastChangeSource = ref<'system' | 'user'>('system');
+  const systemTheme = ref<ThemeValue>(THEME_VALUES.LIGHT);
+  const userTheme = ref<ThemeValue>(THEME_VALUES.LIGHT);
+  const effectiveTheme = ref<ThemeValue>(THEME_VALUES.LIGHT);
+  const lastChangeSource = ref<ChangeSource>(CHANGE_SOURCE.SYSTEM);
 
   const detectSystemTheme = () => {
     if (typeof window !== 'undefined') {
-      const isDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-      systemTheme.value = isDark ? 'dark' : 'light';
+      const isDark = window.matchMedia(MEDIA_QUERIES.PREFERS_DARK).matches;
+      systemTheme.value = isDark ? THEME_VALUES.DARK : THEME_VALUES.LIGHT;
     }
   };
 
-  const applyTheme = (theme: 'light' | 'dark') => {
+  const applyTheme = (theme: ThemeValue) => {
     if (typeof document !== 'undefined') {
-      if (theme === 'dark') {
-        document.documentElement.setAttribute('data-theme', 'dark');
+      if (theme === THEME_VALUES.DARK) {
+        document.documentElement.setAttribute(DOM_ATTRIBUTES.DATA_THEME, THEME_VALUES.DARK);
       }
       else {
-        document.documentElement.removeAttribute('data-theme');
+        document.documentElement.removeAttribute(DOM_ATTRIBUTES.DATA_THEME);
       }
       effectiveTheme.value = theme;
     }
   };
 
-  const setUserTheme = (theme: 'light' | 'dark') => {
+  const setUserTheme = (theme: ThemeValue) => {
     userTheme.value = theme;
-    lastChangeSource.value = 'user';
+    lastChangeSource.value = CHANGE_SOURCE.USER;
     applyTheme(theme);
   };
 
@@ -38,11 +42,11 @@ export const useThemeStore = defineStore('theme', () => {
     userTheme.value = systemTheme.value;
 
     if (typeof window !== 'undefined') {
-      const mediaQuery = window.matchMedia('(prefers-color-scheme: dark)');
+      const mediaQuery = window.matchMedia(MEDIA_QUERIES.PREFERS_DARK);
       mediaQuery.addEventListener('change', (e) => {
-        systemTheme.value = e.matches ? 'dark' : 'light';
+        systemTheme.value = e.matches ? THEME_VALUES.DARK : THEME_VALUES.LIGHT;
 
-        lastChangeSource.value = 'system';
+        lastChangeSource.value = CHANGE_SOURCE.SYSTEM;
         userTheme.value = systemTheme.value;
         applyTheme(systemTheme.value);
       });
