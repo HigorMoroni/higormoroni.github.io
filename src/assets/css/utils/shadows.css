@@ -1,0 +1,10 @@
+.shadow-ring {
+  box-shadow: 0 0 0 8px var(--shadow-color);
+  --shadow-color: var(--color-primary-content-background);
+
+  &--secondary {
+    @media (min-width: 1024px) {
+      --shadow-color: var(--color-secondary-content-background);
+    }
+  }
+}

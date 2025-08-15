@@ -11,3 +11,17 @@
   --color-highlight-hover: #E0A707;
   --color-line: #ECECEC;
 }
+
+[data-theme="dark"] {
+  --color-primary-text: #A4A5A6;
+  --color-secondary-text: #979899;
+  --color-overlay-text: #E4E5E5;
+  --color-primary-content-background: #2D2E2E;
+  --color-secondary-content-background: #2B2C2C;
+  --color-primary-title-background: #2B2C2C;
+  --color-secondary-title-background: #292A2A;
+  --color-mobile-title-background: #282929;
+  --color-highlight: #E0A80D;
+  --color-highlight-hover: #FEFAEE;
+  --color-line: #3A3A3A;
+}
