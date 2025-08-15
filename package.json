@@ -15,6 +15,7 @@
     "@tailwindcss/vite": "^4.1.11",
     "pinia": "^3.0.3",
     "postcss": "^8.5.6",
+    "postcss-nested": "^7.0.2",
     "tailwindcss": "^4.1.11",
     "vue": "^3.5.17"
   },
